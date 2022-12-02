@@ -1,0 +1,151 @@
+a { 
+   text-decoration:none; 
+}
+
+@keyframes GradietionAnimation{
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+ header {
+   background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
+   background-size: 300% 300%; 
+   animation: GradietionAnimation 10s infinite;
+ }
+
+ .navbar {
+   background: rgba(255, 255, 255, 0.3);
+ }
+
+ .header_logo_size {
+   height: 2.5rem;
+ }
+ /*========= fv テキストレイアウトのためのCSS ===============*/
+
+h1{
+   position: fixed;
+   top: 40%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
+   color:#fff;
+   opacity: .7;
+   text-align: center;
+ }
+
+ /*========= スクロールをすると下のエリアが上にかぶさるCSS ===============*/
+ 
+ #fv{
+    /*headerを全画面で見せる*/
+    width:100%;
+    height: 100vh;
+    position: relative;
+    /*グラデーションアニメーション*/
+    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
+    background-size: 300% 300%; 
+    animation: GradietionAnimation 10s infinite;
+   } 
+   
+   #fv:before{
+      /*header の疑似要素に背景画像を指定*/
+      content:"";
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:-1;
+      width:100%;
+      height: 100vh;
+      /*背景設定*/
+      background-color:  linear-gradient(-45deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
+      background-size: 300% 300%; 
+      animation: GradietionAnimation 10s ease infinite;
+      background-size:cover;
+   }
+   
+   
+   .fv_title {
+      font-size: 6.5vw;
+      letter-spacing: .2rem;
+   }
+
+   .fv_logo {
+      height: 5.4rem;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      opacity: .8;
+   }
+
+   .quiz_btn {
+      position: fixed;
+      top: 60%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      letter-spacing: .2rem;
+      font-size: 16px;
+
+   }
+   /*下の被さるエリアの指定*/
+   #container_1{
+      position: relative;
+      z-index:1;
+      /*以下はレイアウトのための記述*/
+      background:#F8F8F8;
+      padding:600px 0;
+      text-align: center;
+   }
+   
+   #container_2{
+      position: relative;
+      z-index:1;
+      /*以下はレイアウトのための記述*/
+      background:#F8F8F8;
+      padding:600px 0;
+      text-align: center;
+   }
+
+   #container_footer{
+      position: relative;
+      z-index:1;
+      /*以下はレイアウトのための記述*/
+      background:#93A2AC;
+      padding:50px 0 172px 0;
+      text-align: center;
+   }
+
+   .footer_logo_size {
+      height: 2.5rem;
+   }
+
+   .footer_link {
+      font-size: 12px;
+      letter-spacing: .2rem;
+   }
+
+   .fixed_button {
+      display: block;
+      background: linear-gradient(-85deg,#ffe2e2,#bcaafa 50%,#d1efff);
+      position: fixed; 
+      z-index: 99999;
+      bottom: 0px; 
+      width: 100%;
+      height: 72px;
+      opacity: .9;
+      a .cta_label {
+         font-size: 1.286em;
+         letter-spacing: .2rem;
+      }
+   }
+   
+   .fixed_button:hover {
+   opacity: .6; /* マウスが重なった時に少し透過 */
+   }
+
+ 
