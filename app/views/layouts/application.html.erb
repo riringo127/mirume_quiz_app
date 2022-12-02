@@ -15,7 +15,7 @@
     <% if request.path == '/' %>
       <%= render 'shared/root_header' %>
     <% else %>
-      <% if looged_in? %>
+      <% if logged_in? %>
         <%= render 'shared/after_login_header' %>
       <% else %>
         <%= render 'shared/before_login_header' %>
@@ -23,9 +23,9 @@
     <% end %>
     <%= yield %>
     <% if request.path == '/' %>
-      <%= render 'shared/root_floating_btn' %>
+      <%= render 'shared/root_floating_btn'%>
     <% else %>
-      <%= render 'shared/footer.html' %>
+      <%= render 'shared/footer'%>
     <% end %>
   </body>
 </html>
