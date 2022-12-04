@@ -6,6 +6,14 @@ ja:
   users:
     new:
       title: 'アカウント作成'
+    create:
+      success: 'アカウント作成が完了しました'
+      fail: 'アカウント作成に失敗しました'
   user_sessions:
     new:
       title: 'ログイン'
+    create:
+      success: 'ログインしました'
+      fail: 'ログインに失敗しました'
+    destroy:
+      success: 'ログアウトしました'
