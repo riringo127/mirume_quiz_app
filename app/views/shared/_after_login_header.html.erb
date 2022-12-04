@@ -4,7 +4,7 @@
             <%= link_to dashboard_path, class: "navbar-brand text-white" do %>
                 <%= image_tag 'brand_logo_w.png', class: "header_logo_size" %>
             <% end %>
-            <%= link_to 'ログアウト', login_path, class: "btn btn-outline-light text-white" %>
+            <%= link_to 'ログアウト', logout_path, class: "btn btn-outline-light text-white", method: :delete %>
             </div>
         </div>
     </nav>
