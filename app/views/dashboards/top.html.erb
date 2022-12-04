@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="card py-3 user_profile fadeUp">
+        <div class="card-body text-center">
+          <p>こんにちは!</p>
+          <span class="me-2"><i class="fa-solid fa-user"></i></span>
+          <span><%= @user.name %></span>
+          <span>さん</span>
+          <%= link_to "#" do %>
+            <span class="user_profile_setting"><i class="fa-solid fa-gear"></i></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col-md-4 mt-3">
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 quiz fadeUp">
+            <div class="card-body text-center text-white">
+              <i class="far fa-check-circle"></i>
+              クイズに挑戦
+              <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-md-4 mt-3">
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 review fadeUp">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-pen"></i>
+            復習する
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-md-4 mt-3">
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 index fadeUp">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-list-ul"></i>
+            色一覧
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<footer>
+<div id="container_dashboard_footer">
+    <div class="d-flex flex-column bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+            <%= image_tag 'brand_logo_w.png', class: "footer_logo_size" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to '利用規約', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to 'プライバシーポリシー', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to 'お問合せ', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <span class="text-white  footer_link">© 2022 mirume.All rights reserved.</span>
+        </div>
+    </div>
+<!--/container--></div> 
+</footer>
+  
