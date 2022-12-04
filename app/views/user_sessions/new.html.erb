@@ -7,21 +7,21 @@
             <!-- Card body -->
             <div class="card-body p-6">
               <div class="mb-4">
-                <h1 class="mb-1 text-center">ログイン</h1>
+                <h1 class="mb-1 text-center"><%= t '.title' %></h1>
               </div>
               <!-- Form -->
               <%= form_with model: @user do |f| %>
               <%#= render 'shared/error_messages', object: f.object %>
                 <div class="mb-3 form_input">
-                  <%= f.label :email %>
+                  <%= f.label :email, User.human_attribute_name(:email) %>
                   <%= f.email_field :email, class: 'form-control' %>
                 </div>
                 <div class="mb-3 form_input">
-                  <%= f.label :password %>
+                  <%= f.label :password, User.human_attribute_name(:password) %>
                   <%= f.password_field :password, class: 'form-control' %>
                 </div>
                 <div class="d-grid">
-                  <%= f.submit 'ログイン', class: 'btn submit_btn text-white' %>
+                  <%= f.submit (t 'defaults.login'), class: 'btn submit_btn text-white' %>
                 </div>
                 <% end %>
                 <div class="mb-3 announcement">
