@@ -4,7 +4,12 @@
       <div class="card py-3 user_profile">
         <div class="card-body text-center">
           <p>こんにちは!</p>
-          <p><%= @user.name %>さん</p>
+          <span class="me-2"><i class="fa-solid fa-user"></i></span>
+          <span><%= @user.name %>
+          <span>さん</span>
+          <%= link_to "#" do %>
+            <span class="user_profile_setting"><i class="fa-solid fa-gear"></i></span>
+          <% end %>
         </div>
       </div>
     </div>
@@ -16,7 +21,8 @@
       <%= link_to "#" do %>
         <div class="card border-0 py-3 quiz">
             <div class="card-body text-center text-white">
-                クイズに挑戦
+              <i class="far fa-check-circle"></i>
+              クイズに挑戦
             </div>
         </div>
       <% end %>
@@ -24,6 +30,7 @@
     <div class="col-md-4 mt-3">
       <div class="card border-0 py-3 review text-white">
         <div class="card-body text-center">
+          <i class="fas fa-pen"></i>
           復習する
         </div>
       </div>
@@ -31,6 +38,7 @@
     <div class="col-md-4 mt-3">
       <div class="card border-0 py-3 index text-white">
         <div class="card-body text-center">
+          <i class="fas fa-list-ul"></i>
           色一覧
         </div>
       </div>

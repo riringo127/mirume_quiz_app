@@ -1,9 +1,11 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'top';
 @import 'before_login_header.scss';
 @import 'footer';
 @import 'form';
 @import 'dashboard';
+
 
 body {
     background-color: #F8F8F8;
