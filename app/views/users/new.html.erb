@@ -7,7 +7,7 @@
             <!-- Card body -->
             <div class="card-body p-6">
               <div class="mb-4 title">
-                <h1 class="mb-1 text-center">アカウント作成</h1>
+                <h1 class="mb-1 text-center"><%= t '.title' %></h1>
               </div>
               <div class="mb-3 announcement">
                 <span>アカウントを作成することにより,
@@ -36,7 +36,7 @@
                   <%= f.password_field :password_confirmation, class: 'form-control' %>
                 </div>
                 <div class="d-grid">
-                  <%= f.submit '登録', class: 'btn submit_btn text-white' %>
+                  <%= f.submit (t 'defaults.register'), class: 'btn submit_btn text-white' %>
                 </div>
                 <% end %>
                 <div class="mb-3 announcement">

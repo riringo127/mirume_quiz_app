@@ -1,0 +1,11 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+  users:
+    new:
+      title: 'アカウント作成'
+  user_sessions:
+    new:
+      title: 'ログイン'
