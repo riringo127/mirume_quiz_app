@@ -8,9 +8,17 @@
     color: #FFB080;
 }
 
+.user_profile_setting:hover {
+    color: #f7c3a5;
+}
+
 .quiz {
     background-color: #FFB1CA;
     letter-spacing: .2rem;
+}
+
+.quiz:hover {
+    background: #FFB080;
 }
 
 .review {
@@ -18,9 +26,17 @@
     letter-spacing: .2rem;
 }
 
+.review:hover {
+    background: #FFB080;
+}
+
 .index {
     background-color: #89E5F8;
     letter-spacing: .2rem;
+}
+
+.index:hover {
+    background: #FFB080;
 }
 
 #container_dashboard_footer {
@@ -32,3 +48,20 @@
     margin-top: 80px;
     text-align: center;
 }
+
+.fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }

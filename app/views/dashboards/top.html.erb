@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row mt-5">
     <div class="col-12">
-      <div class="card py-3 user_profile">
+      <div class="card py-3 user_profile fadeIn">
         <div class="card-body text-center">
           <p>こんにちは!</p>
           <span class="me-2"><i class="fa-solid fa-user"></i></span>
-          <span><%= @user.name %>
+          <span><%= @user.name %></span>
           <span>さん</span>
           <%= link_to "#" do %>
             <span class="user_profile_setting"><i class="fa-solid fa-gear"></i></span>
@@ -19,29 +19,38 @@
   <div class="row mt-5">
     <div class="col-md-4 mt-3">
       <%= link_to "#" do %>
-        <div class="card border-0 py-3 quiz">
+        <div class="card border-0 py-3 quiz fadeIn">
             <div class="card-body text-center text-white">
               <i class="far fa-check-circle"></i>
               クイズに挑戦
+              <i class="fas fa-angle-right"></i>
             </div>
         </div>
       <% end %>
     </div>
+
     <div class="col-md-4 mt-3">
-      <div class="card border-0 py-3 review text-white">
-        <div class="card-body text-center">
-          <i class="fas fa-pen"></i>
-          復習する
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 review fadeIn">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-pen"></i>
+            復習する
+            <i class="fas fa-angle-right"></i>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
+
     <div class="col-md-4 mt-3">
-      <div class="card border-0 py-3 index text-white">
-        <div class="card-body text-center">
-          <i class="fas fa-list-ul"></i>
-          色一覧
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 index fadeIn">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-list-ul"></i>
+            色一覧
+            <i class="fas fa-angle-right"></i>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
