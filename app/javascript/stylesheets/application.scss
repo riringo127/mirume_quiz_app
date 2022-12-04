@@ -3,3 +3,12 @@
 @import 'before_login_header.scss';
 @import 'footer';
 @import 'form';
+@import 'dashboard';
+
+body {
+    background-color: #F8F8F8;
+}
+
+a { 
+    text-decoration:none; 
+ }

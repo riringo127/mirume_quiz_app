@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="card py-3 user_profile">
+        <div class="card-body text-center">
+          <p>こんにちは!</p>
+          <p><%= @user.name %>さん</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col-md-4 mt-3">
+      <%= link_to "#" do %>
+        <div class="card border-0 py-3 quiz">
+            <div class="card-body text-center text-white">
+                クイズに挑戦
+            </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 mt-3">
+      <div class="card border-0 py-3 review text-white">
+        <div class="card-body text-center">
+          復習する
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3">
+      <div class="card border-0 py-3 index text-white">
+        <div class="card-body text-center">
+          色一覧
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+<div id="container_dashboard_footer">
+    <div class="d-flex flex-column bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+            <%= image_tag 'brand_logo_w.png', class: "footer_logo_size" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to '利用規約', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to 'プライバシーポリシー', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <%= link_to 'お問合せ', root_path, class: "text-white footer_link" %>
+        </div>
+        <div class="p-2 bd-highlight">
+            <span class="text-white  footer_link">© 2022 mirume.All rights reserved.</span>
+        </div>
+    </div>
+<!--/container--></div> 
+</footer>
+  
