@@ -17,6 +17,7 @@
     <% else %>
       <%= render 'shared/before_login_header' %>
     <% end %>
+    <%= render 'shared/flash_message' %>
     <%= yield %>
     <% if request.path == '/' %>
       <%= render 'shared/root_floating_btn'%>
