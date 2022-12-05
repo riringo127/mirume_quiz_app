@@ -1,5 +1,5 @@
 class DashboardsController < ApplicationController
   def top
-    @user = current_user
+    @user = User.find(current_user.id)
   end
 end
