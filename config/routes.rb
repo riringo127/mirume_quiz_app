@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'dashboards#top'
 
   resources :users, only: %i[new create]
+  resource :account, only: %i[show edit update destroy]
 end

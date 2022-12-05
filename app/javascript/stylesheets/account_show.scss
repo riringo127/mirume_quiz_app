@@ -1,0 +1,34 @@
+.user_info_table {
+    color: #535E61;
+    .label {
+        font-size: 0.8em;
+    }
+}
+
+.table {
+    color: #535E61;
+}
+
+.edit_btn {
+    background: #f9878b;
+    letter-spacing: .2rem;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+}
+
+.edit_btn:hover {
+    background: #fcbdbf;
+}
+
+.delete_btn {
+    border-color: #ababab;
+    color: #ababab;
+    letter-spacing: .2rem;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+}
+
+.delete_btn:hover {
+    background: #ababab;
+    color: #fff;
+}
