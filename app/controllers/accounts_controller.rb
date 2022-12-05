@@ -7,10 +7,10 @@ class AccountsController < ApplicationController
 
     def update
         if @user.update(user_params)
-            redirect_to account_path, success: t('defaults.message.update', item: User.model.name_human)
+            redirect_to account_path, success: t('defaults.message.updated', item: User.model_name.human)
         else
             flash.now['danger'] = t('defaults.message.not_updated', item: User.model_name.human)
-            redirect :edit
+            render :edit
         end
     end
 
@@ -26,6 +26,6 @@ class AccountsController < ApplicationController
     end
 
     def user_params
-        params.require(:user).permit(:name, :email, :password, :password_confirmation)
+        params.require(:user).permit(:name, :email)
     end
 end

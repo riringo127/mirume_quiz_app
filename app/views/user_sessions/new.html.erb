@@ -1,40 +1,39 @@
-<div class="wrapper">
-  <div class="container d-flex flex-column bg_color">
-    <div class="row align-items-center justify-content-center g-0 min-vh-100">
-      <div class="col-lg-5 col-md-8 py-8 py-xl-0">
-        <!-- Card -->
-          <div class="card border-0">
-            <!-- Card body -->
-            <div class="card-body p-6">
-              <div class="mb-4">
-                <h1 class="mb-1 text-center"><%= t '.title' %></h1>
+<div class="container d-flex flex-column bg_color">
+  <div class="row align-items-center justify-content-center g-0">
+    <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+      <!-- Card -->
+        <div class="card border-0 mt-5">
+          <!-- Card body -->
+          <div class="card-body p-6">
+            <div class="mb-4">
+              <h1 class="mb-1 text-center"><%= t '.title' %></h1>
+            </div>
+            <!-- Form -->
+            <%= form_with model: @user do |f| %>
+            <%#= render 'shared/error_messages', object: f.object %>
+              <div class="mb-3 form_input">
+                <%= f.label :email, User.human_attribute_name(:email) %>
+                <%= f.email_field :email, class: 'form-control' %>
               </div>
-              <!-- Form -->
-              <%= form_with model: @user do |f| %>
-              <%#= render 'shared/error_messages', object: f.object %>
-                <div class="mb-3 form_input">
-                  <%= f.label :email, User.human_attribute_name(:email) %>
-                  <%= f.email_field :email, class: 'form-control' %>
-                </div>
-                <div class="mb-3 form_input">
-                  <%= f.label :password, User.human_attribute_name(:password) %>
-                  <%= f.password_field :password, class: 'form-control' %>
-                </div>
-                <div class="d-grid">
-                  <%= f.submit (t 'defaults.login'), class: 'btn submit_btn text-white' %>
-                </div>
-                <% end %>
-                <div class="mb-3 announcement">
-                  <span>パスワードを忘れた場合は
-                    <%= link_to 'こちら', "#", class: 'ms-1' %>
-                  </span><br>
-                  <span>アカウントをお持ちでないですか？
-                    <%= link_to '新規登録', new_user_path, class: 'ms-1' %>
-                  </span>
-                </div>
-          </div>
+              <div class="mb-3 form_input">
+                <%= f.label :password, User.human_attribute_name(:password) %>
+                <%= f.password_field :password, class: 'form-control' %>
+              </div>
+              <div class="d-grid">
+                <%= f.submit (t 'defaults.login'), class: 'btn submit_btn text-white' %>
+              </div>
+              <% end %>
+              <div class="mb-3 announcement">
+                <span>パスワードを忘れた場合は
+                  <%= link_to 'こちら', "#", class: 'ms-1' %>
+                </span><br>
+                <span>アカウントをお持ちでないですか？
+                  <%= link_to '新規登録', new_user_path, class: 'ms-1' %>
+                </span>
+              </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+

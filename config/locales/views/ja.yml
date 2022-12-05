@@ -6,7 +6,7 @@ ja:
     edit: '編集'
     delete: '削除'
     message:
-      updated: '%{item}を作成しました'
+      updated: "%{item}を更新しました"
       not_updated: '%{item}を更新できませんでした'
       deleted: '%{item}を削除しました'
       delete_confirm: '削除しますか？'
@@ -14,7 +14,7 @@ ja:
     new:
       title: 'アカウント作成'
     create:
-      success: 'アカウント作成が完了しました'
+      success: 'アカウントを作成しました。続けてログインインしてください。'
       fail: 'アカウント作成に失敗しました'
   user_sessions:
     new:
