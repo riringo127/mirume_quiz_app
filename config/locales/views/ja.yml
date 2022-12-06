@@ -30,3 +30,6 @@ ja:
       title: 'アカウント設定'
     edit:
       title: 'アカウント編集'
+  colors:
+    index:
+      title: '色一覧'

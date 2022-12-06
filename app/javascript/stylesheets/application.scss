@@ -8,7 +8,8 @@
 @import 'flash_message';
 @import 'error_messages';
 @import 'account_show';
-
+@import 'colors_index';
+@import 'color_code';
 
 
 body {
@@ -18,3 +19,13 @@ body {
 a { 
     text-decoration:none; 
  }
+
+h1 {
+    color: #ffa9ac;
+    letter-spacing: .1rem;
+    font-size: 1.4em;
+}
+
+.title {
+    padding-top: 20px; 
+}
