@@ -1,0 +1,27 @@
+.tab_menu {
+    font-size: .1rem;
+    font-weight: bold;
+    border-bottom: solid;
+    border-width: thin;
+    border-bottom-color: #93A2AC;
+    border-radius: 4px 4px 0 0;
+    letter-spacing: 0.15rem;
+    padding:10px 0;
+    margin: 20px 0;
+   a {
+    color: #93A2AC;
+    display: block;
+    width: 100%;
+    height: 100%;
+   }
+   a:hover {
+    color: #FFB080;
+   }
+}
+
+.current {
+    background: #93A2AC;
+    a {
+        color: #fff;
+    }
+}

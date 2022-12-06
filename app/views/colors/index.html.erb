@@ -1,0 +1,19 @@
+<% if params[:season] == "spring" %>
+	<%= render 'tab_spring' %>
+<% elsif params[:season] == "summer" %>
+	<%= render 'tab_summer' %>
+<% elsif params[:season] == "autumn" %>
+	<%= render 'tab_autumn' %>
+<% elsif params[:season] == "winter" %>
+	<%= render 'tab_winter' %>
+<% else %>
+	<%= render 'tab_all' %> 
+<% end %>
+
+
+
+
+
+
+
+

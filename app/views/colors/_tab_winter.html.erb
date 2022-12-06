@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col text-center tab_menu">
+      <%= link_to "ALL", colors_path %>
+    </div>
+    <div class="col text-center tab_menu">
+      <%= link_to "スプリング", colors_path(season: "spring") %>
+    </div>
+    <div class="col text-center tab_menu">
+      <%= link_to "サマー", colors_path(season: "summer") %>
+    </div>
+    <div class="col text-center tab_menu">
+      <%= link_to "オータム", colors_path(season: "autumn") %>
+    </div>
+    <div class="col text-center tab_menu current">
+      <%= link_to "ウィンター", colors_path(season: "winter") %>
+    </div>
+    </div>
+  </div>
+</div>

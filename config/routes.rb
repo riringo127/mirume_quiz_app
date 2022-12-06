@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[new create]
   resource :account, only: %i[show edit update destroy]
+
+  resources :colors, only: %i[index show]
 end
