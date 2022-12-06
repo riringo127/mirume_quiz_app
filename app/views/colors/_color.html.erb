@@ -11,13 +11,16 @@
                   <div class="circle-in <%= color.css_class %>"></div>
                 </div>
               </div>
-              <div class="col-9 color_name">
+              <div class="col-8 color_name">
                 <%= link_to "#", class: "d-flex align-items-center" do %>
                   <%= color.name %>
                 <% end %>
               </div>
               <div class="col-1 favorite_btn d-flex align-items-center justify-content-center">
                 <i class="far fa-heart"></i>
+              </div>
+              <div class="col-1 arrow d-flex align-items-center justify-content-center">
+                <i class="fas fa-chevron-right"></i>
               </div>
             </div>
           </div>
