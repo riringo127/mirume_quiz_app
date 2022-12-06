@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Color.create(:name => 'ピーチピンク', :code => '#F5C5B5', :css_class => 'F5C5B5', :season_type => 1, :category_id => 1)
