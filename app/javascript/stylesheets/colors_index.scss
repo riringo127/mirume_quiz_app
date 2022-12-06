@@ -25,3 +25,38 @@
         color: #fff;
     }
 }
+
+.color_index_titile {
+    color: #93A2AC;
+}
+
+.circle{
+    width: 100px;
+  }
+.circle-in{
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #e88;
+     /* 動的に色を変えるので後でbackground-color消す */
+  }
+
+.color_name {
+    font-size: 1em;
+    color: #93A2AC;
+    letter-spacing: 0.7zrem;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #93A2AC;
+        text-align: center;
+       }
+    a:hover {
+        color: #FFB080;
+       }  
+}
+
+.favorite_btn {
+    color: #93A2AC;
+}

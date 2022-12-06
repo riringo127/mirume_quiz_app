@@ -1,3 +1,13 @@
+<!-- title -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="mt-4 text-center color_index_titile"><%= t '.title' %></h1>
+    </div>
+  </div>
+</div>
+
+<!-- tab -->
 <% if params[:season] == "spring" %>
 	<%= render 'tab_spring' %>
 <% elsif params[:season] == "summer" %>
@@ -10,7 +20,7 @@
 	<%= render 'tab_all' %> 
 <% end %>
 
-
+<%= render 'color' %>
 
 
 
