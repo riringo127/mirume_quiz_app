@@ -10,10 +10,17 @@
 @import 'account_show';
 @import 'colors_index';
 @import 'color_code';
+@import 'color_show';
 
 
 body {
     background-color: #F8F8F8;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
 }
 
 a { 
