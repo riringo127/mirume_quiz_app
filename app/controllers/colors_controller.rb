@@ -1,6 +1,10 @@
 class ColorsController < ApplicationController
   def index
-    @colors = Color.all
+    if params[:season]
+      @colors = Color.where(season_type: params[:season])
+    else
+      @colors = Color.all
+    end
   end
 
   def show
