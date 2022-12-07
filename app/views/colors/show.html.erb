@@ -3,14 +3,17 @@
     <div class="d-flex flex-column bd-highlight mb-3 justify-content-center">
       <div class="p-2 bd-highlight d-flex justify-content-center color_show_name">
         <%= @color.name %>
-      </div>
-      <div class="p-2 bd-highlight d-flex justify-content-center color_show_season">
-        <%= @color.season_type %>
+        <%= link_to "#" do %>
+          <i class="far fa-heart ms-3"></i>
+        <% end %>
       </div>
       <div class="p-2 bd-highlight d-flex justify-content-center color_show_code">
         <%= @color.code %>
       </div>
-      <div class="p-2 bd-highlight d-flex justify-content-center align-items-center color_show_back_btn mt-3">
+      <div class="p-2 bd-highlight d-flex justify-content-center color_show_season">
+        <%= @color.season_type_i18n %>
+      </div>
+      <div class="p-2 bd-highlight d-flex justify-content-center align-items-center color_show_back_btn mt-4">
         <%= link_to "一覧に戻る", colors_path, class: "me-2"%>
       </div>
     </div>

@@ -8,6 +8,12 @@
     letter-spacing: .2rem;
     color: #535E61;
     font-weight: 300;
+    a {
+        color: #6f7c80;
+    }
+    a:hover {
+        color: #FFB080;
+    }
 }
 
 .color_show_season {
@@ -23,9 +29,12 @@
 }
 
 .color_show_back_btn {
-    font-size: 12px;
+    font-size: 0.95rem;
     letter-spacing: .2rem;
     a {
-      color: #93A2AC;
+        color: #93A2AC;
+    }
+    a:hover {
+        color: #FFB080;
     }
 }

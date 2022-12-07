@@ -8,3 +8,19 @@ ja:
         password: 'パスワード'
         password_confirmation: 'パスワード確認'
         name: 'ユーザー名'
+      color:
+        name: '色名'
+        code: 'カラーコード'
+        season_type: 'パーソナルカラータイプ'
+  enums:
+    user:
+      role:
+        general: '一般'
+        admin: '管理者'
+    color:
+      season_type:
+        uncategorized: '未分類'
+        spring: 'スプリング'
+        summer: 'サマー'
+        autumn: 'オータム'
+        winter: 'ウィンター'
