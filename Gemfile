@@ -30,6 +30,7 @@ gem 'net-smtp'
 gem 'sorcery'
 gem 'rails-i18n'
 gem 'enum_help'
+gem 'ransack'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
