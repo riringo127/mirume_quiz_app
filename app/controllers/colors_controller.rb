@@ -4,5 +4,6 @@ class ColorsController < ApplicationController
   end
 
   def show
+    @color = Color.find(params[:id])
   end
 end
