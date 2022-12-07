@@ -19,12 +19,12 @@
   </div>
 </div>
 <!-- search -->
-<div class="container mb-5">
-  <div class="row align-items-center justify-content-center g-0">
-    <div class="col-lg-8 col-md-8 py-8">
-      <%= search_form_for @q, url: colors_path do |f| %>
-        <%= f.select :category_id_eq, [['ピンク', 1], ['レッド', 2], ['パープル', 3], ['ブルー', 4], ['グリーン', 5], ['イエロー', 6], ['オレンジ', 7], ['ブラウン', 8], ['ベージュ', 9], ['グレイ', 10], ['ホワイト', 11], ['ブラック', 12]], {include_blank: '選択なし'}, class: 'form-control' %>
-        <%= f.submit "絞り込む", class: 'btn btn-primary' %>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 mb-5 mt-1">
+      <%= search_form_for @q, url: colors_path, class: 'd-flex align-items-center' do |f| %>
+        <%= f.select :category_id_eq, [['ピンク', 1], ['レッド', 2], ['パープル', 3], ['ブルー', 4], ['グリーン', 5], ['イエロー', 6], ['オレンジ', 7], ['ブラウン', 8], ['ベージュ', 9], ['グレイ', 10], ['ホワイト', 11], ['ブラック', 12]], {include_blank: 'カテゴリ検索 ( 選択なし ）'}, class: 'form-select select_box me-2' %>
+        <%= f.submit class: "btn search_btn ms-1 px-4" %>
       <% end %>
     </div>
   </div>
