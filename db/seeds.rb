@@ -149,3 +149,41 @@ Color.create(:name => 'ブラック', :code => '#0B0A08', :css_class => 'c0B0A08
 Color.create(:name => 'ミディアムグレイ', :code => '#9E9F9E', :css_class => 'c9E9F9E', :season_type => 4, :category_id => 10)
 Color.create(:name => 'シルバーグレイ', :code => '#CBCCCB', :css_class => 'cCBCCCB', :season_type => 4, :category_id => 10)
 Color.create(:name => 'スノーホワイト', :code => '#FFFFFF', :css_class => 'cFFFFFF', :season_type => 4, :category_id => 11)
+
+# クイズ
+Color.count.times do |n|
+  Quiz.create(:color_id => n+1)
+end
+
+# 選択肢
+# quiz_id:1~32 選択肢(正解はスプリング)
+1.upto(32) {|n|
+ Choice.create(:content => 'スプリング', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'サマー', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'オータム', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'ウィンター', :is_answer => 1, :quiz_id => n)
+}
+
+# quiz_id:33~64 選択肢(正解はサマー)
+33.upto(64) {|n|
+ Choice.create(:content => 'スプリング', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'サマー', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'オータム', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'ウィンター', :is_answer => 1, :quiz_id => n)
+}
+
+# quiz_id:65~96 選択肢(正解はオータム)
+65.upto(96) {|n|
+ Choice.create(:content => 'スプリング', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'サマー', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'オータム', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'ウィンター', :is_answer => 1, :quiz_id => n)
+}
+
+# quiz_id:97~128 選択肢(正解はウィンター)
+97.upto(128) {|n|
+ Choice.create(:content => 'スプリング', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'サマー', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'オータム', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'ウィンター', :is_answer => 0, :quiz_id => n)
+}
