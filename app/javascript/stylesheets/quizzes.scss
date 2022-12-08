@@ -1,5 +1,25 @@
-.color_box {
-    height: 10em;
-    border-radius: 8px;
-    box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.07);
+ .question_num {
+    color: #6f7c80;
+    font-weight: 300;
+ }
+
+.quiz_title {
+    color: #535E61;
+    letter-spacing: .1rem;
+ }
+
+ .quiz_choices {
+    color: #6f7c80;
+ }
+
+.choice_btn {
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #93A2AC;
+    }
+    a:hover {
+        color: #FFB080;
+    }
 }

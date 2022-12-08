@@ -6,19 +6,24 @@
           <div class="card mb-3 border-0">
             <div class="card-body">
               <div class="d-flex flex-column bd-highlight my-2 justify-content-center">
-                <div class="p-2 bd-highlight d-flex justify-content-center">
+                <div class="question_num p-2 bd-highlight d-flex justify-content-center">
                   Q.<%= i + 1 %>
                 </div>
-                <div class="p-2 bd-highlight d-flex justify-content-center">この色のパーソナルカラータイプは？</div>
+                <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">この色のパーソナルカラータイプは？</div>
                 <div class="p-2 bd-highlight d-flex justify-content-center">
-                  <div class="color_box <%= quiz.color.css_class%>"></div>
+                  <div class="color_box <%= quiz.color.css_class %>"></div>
                 </div>
-                <div class="p-2 bd-highlight d-flex justify-content-center">
-                  <div class="d-flex flex-column bd-highlight my-2 justify-content-center">
-                    <div class="p-2 bd-highlight d-flex justify-content-center">スプリング</div>
-                    <div class="p-2 bd-highlight d-flex justify-content-center">サマー</div>
-                    <div class="p-2 bd-highlight d-flex justify-content-center">オータム</div>
-                    <div class="p-2 bd-highlight d-flex justify-content-center">ウィンター</div>
+                <div class="p-2 bd-highlight d-flex justify-content-center mt-2">
+                  <div class="container-fluid">
+                      <% quiz.choices.each do |choice| %>
+                        <div class="row choice_btn">
+                          <div class="col border rounded mb-2 py-3">
+                            <%= link_to "#" do %>
+                              <%= choice.content %>
+                            <% end %>
+                          </div>
+                        </div>
+                      <% end %>
                   </div>
                 </div>
               </div>
