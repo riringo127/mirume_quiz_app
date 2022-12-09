@@ -107,4 +107,4 @@
 Figma：https://www.figma.com/file/m3zx6nplIatJjAKiIHF1aU/mirume?node-id=0%3A1&t=pQPgWhhduarVF1he-1
 
 ### ER図
-https://drive.google.com/file/d/1pQob7e8El7X1GDOxnW02Rh3jGcV-SO5U/view?usp=sharing
+https://drive.google.com/file/d/1bFIKn7gJI5FG3mlhoQpRvBlnPRJCBaxU/view?usp=sharing
