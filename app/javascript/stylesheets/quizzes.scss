@@ -23,3 +23,27 @@
         color: #FFB080;
     }
 }
+
+.retry_btn_background {
+    background-color: #93A2AC;
+}
+
+.retry_btn {
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    a:hover {
+        color: #FFB080;
+    }
+}
+
+.back_link {
+    color: #93A2AC;
+}
+
+.back_link:hover {
+    color: #FFB080;
+}

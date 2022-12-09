@@ -9,10 +9,13 @@
                 <div class="question_num p-2 bd-highlight d-flex justify-content-center">
                   Q.<%= i + 1 %>
                 </div>
-                <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">この色のパーソナルカラータイプは？</div>
+                <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                    この色のパーソナルカラータイプは？
+                </div>
                 <div class="p-2 bd-highlight d-flex justify-content-center">
                   <div class="color_box <%= quiz.color.css_class %>"></div>
                 </div>
+                <!-- choicesここから -->
                 <div class="p-2 bd-highlight d-flex justify-content-center mt-2">
                   <div class="container-fluid">
                       <% quiz.choices.each do |choice| %>
@@ -26,6 +29,7 @@
                       <% end %>
                   </div>
                 </div>
+                <!-- choicesここまで -->
               </div>
             </div>
           </div>
@@ -33,4 +37,26 @@
       </div>
     </div>
   <% end %>
+  <div class="container mt-3">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-8 col-md-8 py-8">
+        <div class="container-fluid">
+          <div class="row retry_btn">
+            <div class="col rounded mb-2 py-3 retry_btn_background">
+              <%= link_to quizzes_path do %>
+                <i class="fas fa-redo-alt me-2"></i>リトライする
+              <% end %>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col rounded mb-2 py-3 d-flex justify-content-center">
+              <%= link_to dashboard_path, class: "back_link" do %>
+                <i class="fas fa-angle-double-left me-1"></i>ダッシュボードに戻る
+              <% end %>
+            </div>
+          <div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
