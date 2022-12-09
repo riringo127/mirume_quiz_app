@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resource :account, only: %i[show edit update destroy]
 
   resources :colors, only: %i[index show]
-  resources :quizzes, only: %i[index]
+  resources :quizzes, only: %i[index] do
+    resources :mistakes,  only: %i[create destroy]
+  end
 end
