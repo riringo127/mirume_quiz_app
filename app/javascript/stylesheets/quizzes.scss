@@ -1,0 +1,49 @@
+ .question_num {
+    color: #6f7c80;
+    font-weight: 300;
+ }
+
+.quiz_title {
+    color: #535E61;
+    letter-spacing: .1rem;
+ }
+
+ .quiz_choices {
+    color: #6f7c80;
+ }
+
+.choice_btn {
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #93A2AC;
+    }
+    a:hover {
+        color: #FFB080;
+    }
+}
+
+.retry_btn_background {
+    background-color: #93A2AC;
+}
+
+.retry_btn {
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    a:hover {
+        color: #FFB080;
+    }
+}
+
+.back_link {
+    color: #93A2AC;
+}
+
+.back_link:hover {
+    color: #FFB080;
+}
