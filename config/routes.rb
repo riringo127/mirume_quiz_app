@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   resources :colors, only: %i[index show]
   resources :quizzes, only: %i[index] do
-    resources :mistakes,  only: %i[create destroy]
     collection do
       get :mistakes
     end
