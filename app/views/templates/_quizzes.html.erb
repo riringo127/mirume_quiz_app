@@ -15,17 +15,37 @@
                   <div class="color_box <%= quiz.color.css_class %>"></div>
                 </div>
                 <!-- choicesここから -->
-                <div class="p-2 bd-highlight d-flex justify-content-center mt-2">
+                <div class="p-2 bd-highlight d-flex justify-content-center mt-2" id: "js-choice-button-for-quiz-<%= quiz.id %>">
                     <div class="container-fluid">
-                        <% quiz.choices.each do |choice| %>
-                            <div class="row choice_btn">
-                            <div class="col border rounded mb-2 py-3">
-                                <%= link_to "#" do %>
-                                <%= choice.content %>
-                                <% end %>
-                            </div>
-                            </div>
-                        <% end %>
+                        <div class="choices">
+                          <% quiz.choices.each do |c| %> 
+                              <% if !Mistake.exists?(user_id: current_user.id, quiz_id: quiz.id) && c.is_answer == "incorrect" %>
+                                <div class="ichoice" data-id="<%= c.is_answer %>">
+                                  <div class="row choice_btn">
+                                    <div class="col border rounded mb-2 py-3">
+                                      <%= link_to "#{c.content}",  quiz_mistakes_path(quiz), method: :post %>
+                                    </div>
+                                  </div>
+                                </div>
+                              <% elsif c.is_answer == "incorrect" %>
+                                <div class="ichoice" data-id="<%= c.is_answer %>">
+                                    <div class="row choice_btn">
+                                      <div class="col border rounded mb-2 py-3">
+                                        <div class="choice"><%= c.content %></div>
+                                      </div>
+                                    </div>
+                                </div>
+                              <% else %>
+                                <div class="cchoice" data-id="<%= c.is_answer %>">
+                                  <div class="row choice_btn">
+                                    <div class="col border rounded mb-2 py-3">
+                                      <div class="choice"><%= c.content %></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <% end %>                  
+                          <% end %>
+                        </div>
                     </div>
                 </div>
                 <!-- choicesここまで -->
