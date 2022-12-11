@@ -8,9 +8,6 @@
     letter-spacing: .1rem;
  }
 
- .quiz_choices {
-    color: #6f7c80;
- }
 
 .choice_btn {
     a {
@@ -55,4 +52,31 @@
     a:hover {
         color: #FFB080;
     }
+}
+
+.correct_answer_judgement {
+    color: #535E61;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.incorrect_answer_judgement {
+    color: #535E61;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.answer_explanation {
+    color: #535E61;
+    letter-spacing: .1rem;
+    span {
+        color: #FFB080;
+    }
+}
+
+.answer_color_name {
+    color: #535E61;
+    letter-spacing: .1rem;
 }

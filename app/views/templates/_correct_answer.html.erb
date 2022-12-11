@@ -1,0 +1,19 @@
+<div class="p-2 bd-highlight d-flex justify-content-center border rounded">
+  <div class="container-fluid ">
+    <div class="row correct_answer_judgement my-2">
+      <div class="col d-flex justify-content-center align-items-center">
+        <i class="far fa-circle me-1"></i>正解
+      </div>
+    </div>
+    <div class="row answer_explanation mb-1">
+      <div class="col d-flex justify-content-center align-items-center">
+        この色は<span><%= quiz.color.season_type_i18n %>タイプ</span>です
+      </div>
+    </div>
+    <div class="row answer_color_name mb-2">
+      <div class="col d-flex justify-content-center align-items-center">
+        色名：<%= quiz.color.name %>
+      </div>
+    </div>
+  </div>
+</div>
