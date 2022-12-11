@@ -31,6 +31,15 @@
                   </div>
                 </div>
                 <!-- choicesここまで -->
+                <% if request.url.include?('mistakes') %>
+                  <div class="p-2 bd-highlight d-flex justify-content-end">
+                    <div class="delete_btn_from_mistakes" %>
+                      <%= link_to quiz_incorrect_answer_path(quiz, current_user.id), method: :delete, data: { confirm: t('defaults.message.delete_confirm')} do %>
+                        覚えた！<i class="far fa-trash-alt me-1"></i>
+                      <% end %>
+                    </div>
+                  </div>
+                <% end %>
               </div>
             </div>
           </div>
