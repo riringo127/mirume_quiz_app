@@ -17,17 +17,17 @@
                 <!-- choicesここから -->
                 <div class="p-2 bd-highlight d-flex justify-content-center mt-2" id: "js-choice-button-for-quiz-<%= quiz.id %>">
                   <div class="container-fluid">
-                     <div class="choices">
-                        <% quiz.choices.each do |c| %> 
-                          <div class="ichoice" data-id="<%= c.is_answer %>">
-                            <div class="row choice_btn">
-                              <div class="col border rounded mb-2 py-3">
-                                <%= link_to "#{c.content}", user_choices_path(choice_id: c.id), method: :post %>
-                              </div>
-                            </div>
-                          </div>       
-                        <% end %>
-                      </div>
+                    <% quiz.choices.each do |c| %> 
+                      <div class="row choice_btn">
+                        <div class="col border rounded mb-2 py-3">
+                          <% if c.is_answer == "incorrect" %>
+                            <%= link_to "#{c.content}", quiz_incorrect_answers_path(quiz), method: :post %>
+                          <% else %>
+                            <%= link_to "#{c.content}", quiz_correct_answers_path(quiz), method: :post %>
+                          <% end %>
+                        </div>
+                      </div>     
+                    <% end %> 
                   </div>
                 </div>
                 <!-- choicesここまで -->
