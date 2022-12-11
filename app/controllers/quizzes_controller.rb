@@ -4,12 +4,11 @@ class QuizzesController < ApplicationController
   end
 
   def mistakes
-    @user_choices = UserChoice.where(user_id: current_user.id).joins.(:choices).where{is_answer: "inccorect"}
-    
-
+    mistakes = IncorrectAnswer.select(:quiz_id).distinct.where(user_id: current_user.id)
     @quizzes = []
-    @mistakes.each do |mis|
+    mistakes.each do |mis|
       @quizzes << mis.quiz
+      @quizzes.sort_by! {rand}
     end
   end
 end
