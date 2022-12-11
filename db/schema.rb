@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_08_050625) do
+ActiveRecord::Schema.define(version: 2022_12_11_023911) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,24 @@ ActiveRecord::Schema.define(version: 2022_12_08_050625) do
     t.index ["name"], name: "index_colors_on_name", unique: true
   end
 
+  create_table "correct_answers", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "quiz_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["quiz_id"], name: "index_correct_answers_on_quiz_id"
+    t.index ["user_id"], name: "index_correct_answers_on_user_id"
+  end
+
+  create_table "incorrect_answers", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "quiz_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["quiz_id"], name: "index_incorrect_answers_on_quiz_id"
+    t.index ["user_id"], name: "index_incorrect_answers_on_user_id"
+  end
+
   create_table "quizzes", force: :cascade do |t|
     t.bigint "color_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -65,5 +83,9 @@ ActiveRecord::Schema.define(version: 2022_12_08_050625) do
 
   add_foreign_key "choices", "quizzes"
   add_foreign_key "colors", "categories"
+  add_foreign_key "correct_answers", "quizzes"
+  add_foreign_key "correct_answers", "users"
+  add_foreign_key "incorrect_answers", "quizzes"
+  add_foreign_key "incorrect_answers", "users"
   add_foreign_key "quizzes", "colors"
 end
