@@ -6,7 +6,6 @@ class IncorrectAnswersController < ApplicationController
 
     def destroy
         @quiz =Quiz.find(params[:quiz_id])
-        incorrect_answers = IncorrectAnswer.where(user_id: current_user.id, quiz_id: @quiz.id)
-        incorrect_answers.destroy
+        IncorrectAnswer.where(user_id: current_user.id, quiz_id: @quiz.id).destroy_all
     end
 end
