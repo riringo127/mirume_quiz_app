@@ -17,4 +17,5 @@ Rails.application.routes.draw do
       get :mistakes
     end
   end
+  resources :user_choices, only: %i[create destroy]
 end

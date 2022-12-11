@@ -4,7 +4,9 @@ class QuizzesController < ApplicationController
   end
 
   def mistakes
-    @mistakes = Mistake.where(user_id: current_user.id)
+    @user_choices = UserChoice.where(user_id: current_user.id).joins.(:choices).where{is_answer: "inccorect"}
+    
+
     @quizzes = []
     @mistakes.each do |mis|
       @quizzes << mis.quiz
