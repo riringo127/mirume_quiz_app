@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_10_155324) do
+ActiveRecord::Schema.define(version: 2022_12_08_050625) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,15 +52,6 @@ ActiveRecord::Schema.define(version: 2022_12_10_155324) do
     t.index ["color_id"], name: "index_quizzes_on_color_id", unique: true
   end
 
-  create_table "user_choices", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "choice_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["choice_id"], name: "index_user_choices_on_choice_id"
-    t.index ["user_id"], name: "index_user_choices_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "crypted_password"
@@ -75,6 +66,4 @@ ActiveRecord::Schema.define(version: 2022_12_10_155324) do
   add_foreign_key "choices", "quizzes"
   add_foreign_key "colors", "categories"
   add_foreign_key "quizzes", "colors"
-  add_foreign_key "user_choices", "choices"
-  add_foreign_key "user_choices", "users"
 end
