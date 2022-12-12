@@ -33,3 +33,9 @@ ja:
   colors:
     index:
       title: '色一覧'
+  quizzes:
+    index:
+      title: '色識別クイズ'
+    mistakes:
+      title: '間違えた問題'
+      no_result: '間違えた問題はありません'
