@@ -1,11 +1,39 @@
-<header>
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">
-            <%= link_to dashboard_path, class: "navbar-brand text-white" do %>
-                <%= image_tag 'brand_logo_w.png', class: "header_logo_size" %>
-            <% end %>
-            <%= link_to (t 'defaults.logout'), logout_path, class: "btn btn-outline-light text-white", method: :delete %>
-            </div>
-        </div>
-    </nav>
+<header class="after_login">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- ブランドロゴここから -->
+      <%= link_to dashboard_path, class: "navbar-brand text-white" do %>
+        <%= image_tag 'brand_logo_w.png', class: "header_logo_size" %>
+      <% end %>
+      <!-- ブランドロゴここまで -->
+      <!-- ハンバーガーメニューここから -->
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+          <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+            <ul>
+              <li>
+                <%= link_to dashboard_path, class: "d-flex align-items-center mb-4" do %>
+                    <i class="fa-solid fa-house me-1 "></i>ダッシュボード
+                <% end %>
+              </li>  
+              <li>
+                <%= link_to account_path, class: "d-flex align-items-center mb-4" do %>
+                    <i class="fa-solid fa-gear me-1"></i>アカウント設定
+                  <% end %>
+              </li>  
+              <li>
+                <%= link_to logout_path, class: "d-flex align-items-center mb-4", method: :delete do %>
+                    <i class="fa fa-sign-out me-1" aria-hidden="true"></i>ログアウト
+                <% end %>
+              </li>  
+            </ul>
+          </div>
+        </nav>
+      <!-- ハンバーガーメニューここまで -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </header>
+<%= javascript_pack_tag 'header' %>
+
+
+    
