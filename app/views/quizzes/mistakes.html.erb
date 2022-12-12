@@ -1,3 +1,22 @@
-<div class="mt-5">
-  <%= render 'templates/quizzes' %>
+<!-- title -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="mt-5 text-center page_titile"><%= t '.title' %></h1>
+    </div>
+  </div>
 </div>
+
+<% if @quizzes.present? %>
+  <div class="mt-5">
+    <%= render 'templates/quizzes' %>
+  </div>
+<% else %>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col d-flex justify-content-center no_result">
+        <p><%= t('.no_result') %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
