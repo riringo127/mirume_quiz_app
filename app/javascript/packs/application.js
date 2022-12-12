@@ -12,5 +12,6 @@ import '@fortawesome/fontawesome-free/js/all';
 import "../stylesheets/application.scss";
 import "jquery"
 
+
 Rails.start()
 ActiveStorage.start()
