@@ -15,19 +15,21 @@
                   <div class="color_box <%= quiz.color.css_class %>"></div>
                 </div>
                 <!-- choicesここから -->
-                <div class="p-2 bd-highlight d-flex justify-content-center mt-2" id: "js-choice-button-for-quiz-<%= quiz.id %>">
-                  <div class="container-fluid">
-                    <% quiz.choices.each do |c| %> 
-                      <div class="row choice_btn">
-                        <div class="col border rounded mb-2 py-3">
-                          <% if c.is_answer == "incorrect" %>
-                            <%= link_to "#{c.content}", quiz_incorrect_answers_path(quiz), method: :post, remote: true %>
-                          <% else %>
-                            <%= link_to "#{c.content}", quiz_correct_answers_path(quiz), method: :post, remote: true %>
-                          <% end %>
-                        </div>
-                      </div>     
-                    <% end %> 
+                <div id="js-choice-button-for-quiz-<%= quiz.id %>">
+                  <div class="p-2 bd-highlight d-flex justify-content-center mt-2" >
+                    <div class="container-fluid">
+                      <% quiz.choices.each do |c| %> 
+                        <div class="row choice_btn">
+                          <div class="col border rounded mb-2 py-3">
+                            <% if c.is_answer == "incorrect" %>
+                              <%= link_to "#{c.content}", quiz_incorrect_answers_path(quiz), method: :post, remote: true %>
+                            <% else %>
+                              <%= link_to "#{c.content}", quiz_correct_answers_path(quiz), method: :post, remote: true %>
+                            <% end %>
+                          </div>
+                        </div>     
+                      <% end %> 
+                    </div>
                   </div>
                 </div>
                 <!-- choicesここまで -->
