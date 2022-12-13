@@ -1,4 +1,5 @@
 <% @quizzes.each_with_index do |quiz, i| %>
+  <div id="js-delete-area-for-mistakes_quiz-<%= quiz.id %>">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-8 col-md-8 py-8">
@@ -37,7 +38,7 @@
                 <% if request.url.include?('mistakes') %>
                   <div class="p-2 bd-highlight d-flex justify-content-end">
                     <div class="delete_btn_from_mistakes" %>
-                      <%= link_to quiz_incorrect_answer_path(quiz, current_user.id), method: :delete, data: { confirm: t('defaults.message.delete_confirm')} do %>
+                      <%= link_to quiz_incorrect_answer_path(quiz, current_user.id), method: :delete, remote: true do %>
                         覚えた！<i class="far fa-trash-alt me-1"></i>
                       <% end %>
                     </div>
@@ -50,5 +51,6 @@
         </div>
       </div>
     </div>
+  </div>
 <% end %>
 
