@@ -9,10 +9,18 @@
 
 <div class="mt-5">
   <%= render 'templates/quizzes' %>
-  <div class="container mt-3">
+  <div class="container mt-2">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-8 col-md-8 py-8">
         <div class="container-fluid">
+          <div class="row mb-3">
+            <div class="col result_area">
+              <span class="box-title">採点結果</span>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <p><%= @quizzes.length %>問中</p><p id="count">0</p><p>問正解!</p>
+                </div>
+            </div>
+          </div>
           <div class="row retry_btn">
             <div class="col rounded mb-2 py-3 retry_btn_background">
               <%= link_to quizzes_path do %>
@@ -32,3 +40,4 @@
     </div>
   </div>
 </div>
+<%= javascript_pack_tag 'quizzes' %>

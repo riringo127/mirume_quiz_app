@@ -85,3 +85,35 @@
     color: #535E61;
     letter-spacing: .1rem;
 }
+
+.result_area {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 2px #95ccff;
+    border-image: linear-gradient(to right, #FFB080 0%, #FFB1CA 100%);
+    border-image-slice: 1;
+    border-radius: 8px;
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #F8F8F8;
+        color: #FFB080;
+        font-weight: 500;
+    }
+    p {
+        color: #FFB080;
+        display:inline-block;
+        letter-spacing: .1rem;
+    }
+}
+
+#count {
+    color: #FFB080;
+    font-size: 28px;
+}
