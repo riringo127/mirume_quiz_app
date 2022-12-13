@@ -10,6 +10,28 @@
 <% if @quizzes.present? %>
   <div class="mt-5">
     <%= render 'templates/quizzes' %>
+    <div class="container mt-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 col-md-8 py-8">
+          <div class="container-fluid">
+            <div class="row retry_btn">
+              <div class="col rounded mb-2 py-3 retry_btn_background">
+                <%= link_to mistakes_quizzes_path do %>
+                  <i class="fas fa-redo-alt me-2"></i>リトライする
+                <% end %>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col rounded mb-2 py-3 d-flex justify-content-center">
+                <%= link_to dashboard_path, class: "back_link" do %>
+                  <i class="fas fa-angle-double-left me-1"></i>ダッシュボードに戻る
+                <% end %>
+              </div>
+            <div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 <% else %>
   <div class="container mt-5">
@@ -20,3 +42,4 @@
     </div>
   </div>
 <% end %>
+<%= javascript_pack_tag 'quizzes' %>
