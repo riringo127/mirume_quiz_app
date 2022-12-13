@@ -4,7 +4,7 @@ class QuizzesController < ApplicationController
   end
 
   def mistakes
-    mistakes = IncorrectAnswer.select(:quiz_id).distinct.where(user_id: current_user.id)
+    mistakes = current_user.incorrect_answers.select(:quiz_id).distinct
     @quizzes = []
     mistakes.each do |mis|
       @quizzes << mis.quiz

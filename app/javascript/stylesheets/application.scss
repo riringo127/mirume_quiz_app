@@ -39,5 +39,8 @@ h1 {
 }
 
 .page_titile {
-    color: #93A2AC;
+    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,8 +1,32 @@
 .user_profile {
     border-color: #FFB080;
     color: #FFB080;
-    letter-spacing: .2rem;
+    letter-spacing: .2rem; 
 }
+
+.total_cont_border {
+    border-top: 1px solid #FFB080;
+    border-image-source: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+	border-image-slice: 1;
+}
+
+#total_count {
+    display:inline-block;
+    font-size: 3em;
+    margin-right: 8px;
+    background: linear-gradient(90deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ #total_count_colors {
+    font-size: 1.5em;
+    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
 
 .quiz {
     background-color: #FFB1CA;

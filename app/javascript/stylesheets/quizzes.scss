@@ -22,7 +22,9 @@
 }
 
 .retry_btn_background {
-    background-color: #93A2AC;
+    background: linear-gradient(-85deg,#CFBAFF, #89E5F8, #FFE279) fixed; 
+    background-size: 300% 300%; 
+    animation: GradietionAnimation 10s infinite;
 }
 
 .retry_btn {
@@ -107,9 +109,12 @@
         font-weight: 500;
     }
     p {
-        color: #FFB080;
+        background: linear-gradient(90deg, #FFB080, #FFB1CA);
+        background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         display:inline-block;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
     }
 }
 
