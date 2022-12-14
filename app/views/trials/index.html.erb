@@ -36,7 +36,7 @@
                               <div class="d-flex justify-content-center trialbtn js-correct-btn-for-trial-quiz-<%= i + 1 %>"><%= c.content %></div>
                             <% end %>
                           </div>
-                        </div>     
+                        </div>
                       <% end %> 
                     </div>
                   </div>
@@ -108,10 +108,15 @@
                 </div>
             </div>
           </div>
-          <div class="row retry_btn">
-            <div class="col rounded mb-2 py-3 retry_btn_background">
-              <%= link_to trials_path do %>
-                <i class="fas fa-redo-alt me-2"></i>リトライする
+          <div class="row d-flex justify-content-center align-items-center mb-4">
+            <div class="balloon">
+              <p>他の色にも挑戦する!</p>
+            </div>
+          </div>
+          <div class="row trial-signup_btn">
+            <div class="col rounded mb-2 py-3 trial-signup_btn_background">
+              <%= link_to new_user_path do %>
+                無料会員登録
               <% end %>
             </div>
           </div>

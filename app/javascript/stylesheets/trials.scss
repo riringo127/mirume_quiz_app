@@ -11,3 +11,66 @@
 .hidden{
     display: none;
   }
+
+  
+.trial-signup_btn_background {
+    background: linear-gradient(-85deg,#CFBAFF, #89E5F8, #FFE279) fixed; 
+    background-size: 300% 300%; 
+    animation: GradietionAnimation 10s infinite;
+}
+
+.trial-signup_btn {
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #F8F8F8;
+        letter-spacing: .2rem;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+    a:hover {
+        color: #FFB080;
+    }
+}
+
+.balloon {
+    position: relative;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #89E5F8;
+    border-image-source: linear-gradient(-85deg, #FFB1CA, #CFBAFF, #89E5F8);
+	border-image-slice: 1;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .balloon:before,
+    .balloon:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    .balloon:before {
+    border: 6px solid transparent;
+    border-top: 6px solid #CFBAFF;
+    }
+    
+    .balloon:after {
+    border: solid 7px transparent;
+    border-top: solid 7px #F8F8F8;
+    margin-top: -2.5px;
+    }
+    
+    .balloon p {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF);
+    background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .1rem;
+    }
