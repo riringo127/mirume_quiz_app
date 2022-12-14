@@ -7,7 +7,9 @@
             <div class="p-2 bd-highlight pt-4">こんにちは!</div>
             <div class="p-2 bd-highlight pb-5"><i class="fa-solid fa-user me-2"></i><%= @user.name %>さん</div>
             <div class="p-2 bd-highlight total_cont_border pt-5"><i class="fas fa-award me-2"></i>総クリア数(全<%= @quizzes.length %>色)</div>
-            <div class="p-2 bd-highlight pt-2 pb-3"><p id="total_count"><%= @count %></p><span id="total_count_colors">colors<span></div>
+            <div class="p-2 bd-highlight pt-2 pb-3">
+              <p id="total_count", data-num="<%= @count %>">0</p><span id="total_count_colors">colors<span>
+            </div>
           </div>
         </div>
       </div>
@@ -70,4 +72,4 @@
     </div>
 <!--/container--></div> 
 </footer>
-  
+<%= javascript_pack_tag 'dashboard' %>
