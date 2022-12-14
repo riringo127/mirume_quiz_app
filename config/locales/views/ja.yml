@@ -39,3 +39,6 @@ ja:
     mistakes:
       title: '間違えた問題'
       no_result: '間違えた問題はありません'
+  trials:
+    index:
+      title: 'お試しクイズ'
