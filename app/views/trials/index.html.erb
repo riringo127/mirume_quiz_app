@@ -1,0 +1,123 @@
+<!-- title -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="mt-5 text-center page_titile"><%= t '.title' %></h1>
+    </div>
+  </div>
+</div>
+<div class="mt-5">
+  <% @quizzes.each_with_index do |quiz, i| %>
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 col-md-8 py-8">
+          <div class="card mb-3 border-0">
+            <div class="card-body">
+              <div class="d-flex flex-column bd-highlight my-2 justify-content-center">
+                <div class="question_num p-2 bd-highlight d-flex justify-content-center">
+                  Q.<%= i + 1 %>
+                </div>
+                <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                  この色のパーソナルカラータイプは？
+                </div>
+                <div class="p-2 bd-highlight d-flex justify-content-center">
+                  <div class="color_box <%= quiz.color.css_class %>"></div>
+                </div>
+                <!-- choicesここから -->
+                <div id="js-choice-buttons-for-trial-quiz-<%= i + 1 %>">
+                  <div class="p-2 bd-highlight d-flex justify-content-center mt-2" >
+                    <div class="container-fluid">
+                      <% quiz.choices.each do |c| %> 
+                        <div class="row choice_btn">
+                          <div class="col border rounded mb-2 py-3">
+                            <% if c.is_answer == "incorrect" %>
+                              <div class="d-flex justify-content-center trialbtn js-incorrect-btn-for-trial-quiz-<%= i + 1 %>"><%= c.content %></div>
+                            <% else %>
+                              <div class="d-flex justify-content-center trialbtn js-correct-btn-for-trial-quiz-<%= i + 1 %>"><%= c.content %></div>
+                            <% end %>
+                          </div>
+                        </div>     
+                      <% end %> 
+                    </div>
+                  </div>
+                </div>
+                <!-- choicesここまで -->
+                <!-- 正解解説ここから -->
+                <div id="js-correct-answer-for-trial-quiz-<%= i + 1 %>" class="hidden">
+                  <div class="p-2 bd-highlight d-flex justify-content-center border rounded">
+                    <div class="container-fluid ">
+                      <div class="row correct_answer_judgement my-2">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <i class="far fa-circle me-1"></i>正解
+                        </div>
+                      </div>
+                      <div class="row answer_explanation mb-1">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          この色は<span><%= quiz.color.season_type_i18n %>タイプ</span>です
+                        </div>
+                      </div>
+                      <div class="row answer_color_name mb-2">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          色名：<%= quiz.color.name %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 正解解説ここまで -->
+                <!-- 不正解解説ここから -->
+                <div id="js-incorrect-answer-for-trial-quiz-<%= i + 1 %>" class="hidden">
+                  <div class="p-2 bd-highlight d-flex justify-content-center border rounded">
+                    <div class="container-fluid ">
+                      <div class="row incorrect_answer_judgement my-2">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <i class="fas fa-times me-2"></i></i>不正解
+                        </div>
+                      </div>
+                      <div class="row answer_explanation mb-1">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          この色は<span><%= quiz.color.season_type_i18n %>タイプ</span>です
+                        </div>
+                      </div>
+                      <div class="row answer_color_name mb-2">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          色名：<%= quiz.color.name %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 不正解解説ここまで -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="container mt-2">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-8 col-md-8 py-8">
+        <div class="container-fluid">
+          <div class="row mb-3">
+            <div class="col result_area">
+              <span class="box-title">採点結果</span>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <p><%= @quizzes.length %>問中</p><p id="count">0</p><p>問正解!</p>
+                </div>
+            </div>
+          </div>
+          <div class="row retry_btn">
+            <div class="col rounded mb-2 py-3 retry_btn_background">
+              <%= link_to trials_path do %>
+                <i class="fas fa-redo-alt me-2"></i>リトライする
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_pack_tag 'trials' %>

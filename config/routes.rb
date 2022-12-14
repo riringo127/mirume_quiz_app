@@ -19,4 +19,5 @@ Rails.application.routes.draw do
       get :mistakes
     end
   end
+  resources :trials, only: %i[index] 
 end
