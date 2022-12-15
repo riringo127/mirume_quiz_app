@@ -1,10 +1,13 @@
-<header>
+<header class="before_login">
     <nav class="navbar navbar-light">
         <div class="container-fluid">
             <%= link_to root_path, class: "navbar-brand text-white" do %>
                 <%= image_tag 'brand_logo_w.png', class: "header_logo_size" %>
             <% end %>
-            <%= link_to (t 'defaults.login'), login_path, class: "btn btn-outline-light text-white" %>
+            <div class="d-flex justify-content-end align-items-center">
+              <%= link_to (t 'defaults.login'), login_path, class: "loginbtn me-2 " %>
+              <%= link_to "無料会員登録", new_user_path, class: "signupbtn me-1" %>
+            </div>
             </div>
         </div>
     </nav>
