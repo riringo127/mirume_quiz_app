@@ -1,3 +1,32 @@
 .all_rights_reserved {
     color: #93A2AC;
 }
+
+.footer_logo_size {
+    height: 2.5rem;
+ }
+
+ .footer_link {
+    font-size: 12px;
+    letter-spacing: .2rem;
+    color: #93A2AC;
+ }
+ .footer_link:hover {
+   color: #FFB080;
+ }
+
+ #container_root_footer{
+    background:#93A2AC;
+    padding:50px 0 122px 0;
+    text-align: center;
+ }
+
+ #container_dashboard_footer {
+   position: relative;
+   z-index:1;
+   /*以下はレイアウトのための記述*/
+   background:#93A2AC;
+   padding:30px 0;
+   margin-top: 80px;
+   text-align: center;
+}

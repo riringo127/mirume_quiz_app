@@ -1,37 +1,221 @@
-<main>
-    <div class="fv" id="fv">
-        <h1 class="fv_title">PERSONAL&nbsp;COLOR</h1>
-            <%= image_tag 'brand_logo_p.png', class: "fv_logo" %>
-            <%= link_to 'クイズに挑戦する', trials_path, class: "btn btn-outline-light text-white d-flex justify-content-center quiz_btn" %>
+<div class="bg-light p-3 p-sm-5 mb-4 fv">
+  <div class="container py-5">
+    <h1 class="display-4 blur">クイズで鍛えよう<br>色を見る目を。</h1>
+    <hr class="my-5">
+    <p class="lead mb-4 blur">パーソナルカラーで<br>色を選びたいあなたに。<br>色識別クイズアプリ "mirume" </p>
+    <%= link_to "お試しクイズに挑戦", trials_path, class: "trialquizzebtn blur" %>
+  </div>
+</div>
+<div class="container">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-10 col-md-10 py-8">
+      <h1 class="mt-5 text-center section_titile">what's mirume ?</h1>
+      <hr class="my-4">
     </div>
-
-    <div id="container_1">
-        <p>１つ目のコンテンツ</p> 
-    <!--/container--></div> 
-
-    <div id="container_2">
-        <p>２つ目のコンテンツ</p> 
-    <!--/container--></div> 
-
-    </main>
-    <footer>
-        <div id="container_root_footer">
-            <div class="d-flex flex-column bd-highlight mb-3">
-                <div class="p-2 bd-highlight">
-                    <%= image_tag 'brand_logo_w.png', class: "footer_logo_size" %>
-                </div>
-                <div class="p-2 bd-highlight">
-                    <%= link_to '利用規約', root_path, class: "text-white footer_link" %>
-                </div>
-                <div class="p-2 bd-highlight">
-                    <%= link_to 'プライバシーポリシー', root_path, class: "text-white footer_link" %>
-                </div>
-                <div class="p-2 bd-highlight">
-                    <%= link_to 'お問合せ', root_path, class: "text-white footer_link" %>
-                </div>
-                <div class="p-2 bd-highlight">
-                    <span class="text-white  footer_link">© 2022 mirume.All rights reserved.</span>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-1.png', class: "card-img-top" %>
+              <div class="card-body">
+                <h5 class="card-title">4択クイズでゲームのように</h5>
+                <p class="card-text">操作は簡単。ランダムに出題される色のパーソナルカラータイプを選択するだけ。ゲームのように楽しく学べます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-2.png', class: "card-img-top" %>
+                <div class="card-body">
+                  <h5 class="card-title">全128色から出題</h5>
+                  <p class="card-text">各タイプの代表的な色をセレクト。クイズを解けば解くほど、色を見る目が磨かれます。オールクリアをぜひ目指して。</p>
                 </div>
             </div>
-        <!--/container--></div> 
-    </footer>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-3.png', class: "card-img-top" %>
+              <div class="card-body">
+                <h5 class="card-title">間違えた色を自動抽出</h5>
+                <p class="card-text">間違えやすい色の傾向を掴みましょう。間違えた色を自動的にピックアップ。効率的に復習ができます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-4.png', class: "card-img-top" %>
+                <div class="card-body">
+                  <h5 class="card-title">ショッピングのお供に</h5>
+                  <p class="card-text">洋服やコスメの色選びに迷ったら、色一覧を開いて見比べてましょう。近い色があれば、同じタイプの色かも。</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-10 col-md-10 py-8 d-flex align-items-center justify-content-center">
+      <%= link_to "お試しクイズに挑戦", trials_path, class: "trialquizzebtn blur" %>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-10 col-md-10 py-8">
+      <h1 class="mt-5 text-center section_titile">what's personal color ?</h1>
+      <hr class="my-4">
+    </div>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="card mb-2 border-0">
+        <div class="card-body explanation_pc">
+          <h5 class="card-title d-flex align-items-center justify-content-center mb-3">パーソナルカラーとは</h5>
+          <p class="card-text">身につけた人の魅力を最大限に引き出す色のこと。このような効果が期待できます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="container-fluid">
+        <div class="row mb-3">
+          <div class="col merit_area">
+            <span class="box-title">似合う色の効果</span>
+            <div class="d-flex justify-content-start align-items-center mt-3">
+              <ul>
+                <li class="my-1 ms-3"><i class="fas fa-check me-3"></i>美肌にみえる</li>
+                <li class="mb-1 ms-3"><i class="fas fa-check me-3"></i>小顔にみえる</li>
+                <li class="mb-1 ms-3"><i class="fas fa-check me-3"></i>目力がアップしてみえる</li>
+                <li class="mb-1 ms-3"><i class="fas fa-check me-3"></i>着痩せしてみえる</li>
+                <li class="mb-1 ms-3"><i class="fas fa-check me-3"></i>色の調和で好感度が高くみえる</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-10 col-md-10 py-8">
+      <h1 class="mt-5 text-center section_titile">personal color type</h1>
+      <hr class="my-4">
+    </div>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="card mb-2 border-0">
+        <div class="card-body explanation_pc">
+          <h5 class="card-title d-flex align-items-center justify-content-center mb-3">４つのパーソナルカラータイプ</h5>
+          <p class="card-text">パーソナルカラーは「スプリング」「サマー」「オータム」「ウィンター」の４タイプに分類。<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mb-3">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col yellowbase_area">
+            <span class="box-title">yellow base</span>
+            <div class="d-flex justify-content-start align-items-center mt-1 py-2">
+              <span class="ms-3">黄みよりの色が似合うのが「スプリング」「オータム」のイエローベース。</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bluebase_area">
+            <span class="box-title">blue base</span>
+            <div class="d-flex justify-content-start align-items-center py-2">
+              <span class="ms-3">青みよりの色が似合うのが「サマー」「ウィンター」のブルーーベース。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-5.png', class: "card-img-top" %>
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">スプリング</h5>
+                <h7 class="card-title d-flex justify-content-center y_basetitle">yellow base</h7>
+                <p class="card-text">春に咲く花や緑のように、明るくあたたかみがあり、くすみのない色。高明度、高彩度の色が多い。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-6.png', class: "card-img-top" %>
+                <div class="card-body">
+                  <h5 class="card-title d-flex justify-content-center">サマー</h5>
+                  <h7 class="card-title d-flex justify-content-center b_basetitle">blue base</h7>
+                  <p class="card-text">初夏や梅雨の景色のように、淡く、ソフトで、ダスティーな色。高明度、低彩度の色が多い。</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-7.png', class: "card-img-top" %>
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">オータム</h5>
+                <h7 class="card-title d-flex justify-content-center y_basetitle">yellow base</h7>
+                <p class="card-text">秋の紅葉のように、こっくりとした深みと渋みのある落ち着いた色。低明度、低再度の色が多い。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 py-8">
+            <div class="card mb-4 border-0 ">
+              <%= image_tag 'top-8.png', class: "card-img-top" %>
+                <div class="card-body">
+                  <h5 class="card-title d-flex justify-content-center">ウィンター</h5>
+                  <h7 class="card-title d-flex justify-content-center b_basetitle">blue base</h7>
+                  <p class="card-text">きりりとした冬の空気のように、原色やビビッドでシャープな色。低明度、高彩度の色が多い。</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4 mb-5">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-10 col-md-10 py-8 d-flex align-items-center justify-content-center">
+      <%= link_to "お試しクイズに挑戦", trials_path, class: "trialquizzebtn blur" %>
+    </div>
+  </div>
+</div>
+
+
+
+    

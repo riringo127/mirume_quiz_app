@@ -4,11 +4,11 @@
     letter-spacing: .2rem; 
 }
 
-.total_cont_border {
-    border-top: 1px solid #FFB080;
-    border-image-source: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279);
-	border-image-slice: 1;
-}
+.my-4 {
+    border-width: 1.5px;
+    border-image-source: linear-gradient(90deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8);
+	  border-image-slice: 1;
+  }
 
 #total_count {
     display:inline-block;
@@ -53,16 +53,6 @@
 
 .index:hover {
     background: #FFB080;
-}
-
-#container_dashboard_footer {
-    position: relative;
-    z-index:1;
-    /*以下はレイアウトのための記述*/
-    background:#93A2AC;
-    padding:30px 0;
-    margin-top: 80px;
-    text-align: center;
 }
 
 .fadeUp{

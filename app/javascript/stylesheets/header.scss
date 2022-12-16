@@ -12,7 +12,7 @@
     height: 2.5rem;
   }
 
-  .after_login {
+  .before_login {
     position: sticky;
     z-index: 999;
     top: 0;
@@ -20,6 +20,42 @@
     width: 100%;
   }
 
+  .loginbtn {
+    color:#fff;
+  }
+
+  .loginbtn:hover {
+    color:#fa6c9f;
+  }
+
+.signupbtn {
+    display: inline-block;
+    padding: 8px 16px;  
+    border-radius:8px;
+    text-decoration: none;
+    border:1px solid #fff;
+    color: #fff;
+    outline: none;
+    letter-spacing: .1rem;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.signupbtn:hover {
+    /*ボタンの形状*/
+    border-color:transparent;
+    color: #fff;
+    /*背景の色と形状*/
+    background: #fa6c9f;
+}
+
+
+  .after_login {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
  /*========= ナビゲーションのためのCSS ===============*/
 

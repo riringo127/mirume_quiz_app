@@ -1,117 +1,3 @@
-@keyframes GradietionAnimation{
-   0% {
-     background-position: 0% 50%;
-   }
-   50% {
-     background-position: 100% 50%;
-   }
-   100% {
-     background-position: 0% 50%;
-   }
- }
- 
- /*========= fv テキストレイアウトのためのCSS ===============*/
-
-.fv_title {
-   position: fixed;
-   top: 40%;
-   left: 50%;
-   transform: translateY(-50%) translateX(-50%);
-   color:#fff;
-   opacity: .7;
-   text-align: center;
- }
-
- /*========= スクロールをすると下のエリアが上にかぶさるCSS ===============*/
- 
- #fv{
-    width:100%;
-    height: 100vh;
-    position: relative;
-    /*グラデーションアニメーション*/
-    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
-    background-size: 300% 300%; 
-    animation: GradietionAnimation 10s infinite;
-   } 
-   
-   #fv:before{
-      /*header の疑似要素に背景画像を指定*/
-      content:"";
-      position:fixed;
-      top:0;
-      left:0;
-      z-index:-1;
-      width:100%;
-      height: 100vh;
-      /*背景設定*/
-      background-color:  linear-gradient(-45deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
-      background-size: 300% 300%; 
-      animation: GradietionAnimation 10s ease infinite;
-      background-size:cover;
-   }
-   
-   
-   .fv_title {
-      font-size: 6.5vw;
-      letter-spacing: .2rem;
-      font-family: "Dunbar Low Light";
-   }
-
-   .fv_logo {
-      height: 5.4rem;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      opacity: .8;
-   }
-
-   .quiz_btn {
-      position: fixed;
-      top: 60%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      letter-spacing: .2rem;
-      font-size: 16px;
-
-   }
-   /*下の被さるエリアの指定*/
-   #container_1{
-      position: relative;
-      z-index:1;
-      /*以下はレイアウトのための記述*/
-      background:#F8F8F8;
-      padding:600px 0;
-      text-align: center;
-   }
-   
-   #container_2{
-      position: relative;
-      z-index:1;
-      /*以下はレイアウトのための記述*/
-      background:#F8F8F8;
-      padding:600px 0;
-      text-align: center;
-   }
-
-   #container_root_footer{
-      position: relative;
-      z-index:1;
-      /*以下はレイアウトのための記述*/
-      background:#93A2AC;
-      padding:50px 0 122px 0;
-      text-align: center;
-   }
-
-   .footer_logo_size {
-      height: 2.5rem;
-   }
-
-   .footer_link {
-      font-size: 12px;
-      letter-spacing: .2rem;
-   }
-
    .fixed_button {
       display: block;
       background: linear-gradient(-85deg,#ffe2e2,#bcaafa 50%,#d1efff);
@@ -131,4 +17,256 @@
    opacity: .6; /* マウスが重なった時に少し透過 */
    }
 
+  .display-4 {
+    color:#fff;
+  }
+
+  .lead {
+    color: #fff;
+    letter-spacing: .2rem;
+    font-weight: 300;
+  }
+
+  .btn-light {
+    background: #FFB080;
+    color: #fff;
+  }
+
+  .my-5 {
+    border-width: 1.5px;
+    border-color: #fff;
+  }
+
+  .fv {
+      /*グラデーションアニメーション*/
+      background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8, #FFE279) fixed; 
+      background-size: 300% 300%; 
+      animation: GradietionAnimation 10s infinite;
+      opacity: .9;
+    }
+  
+  .section_titile {
+      background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8);
+      background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF, #89E5F8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .trialquizzebtn {
+    /*ボタンの形状*/
+    display: inline-block;
+    padding: 18px 60px;  
+    border-radius:30px;
+    text-decoration: none;
+    border:1px solid #fa6c9f;
+    color: #fa6c9f;
+    outline: none;
+    letter-spacing: .1rem;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.trialquizzebtn:hover {
+    /*ボタンの形状*/
+    border-color:transparent;
+    color: #fff;
+    /*背景の色と形状*/
+    background: #fa6c9f;
+}
+
+  .card-title {
+    color: #535E61; 
+  }
+  .card-text {
+    color: #8e9fa4; 
+    font-weight: 100;
+  }
+
+  .explanation_pc {
+    background: #F8F8F8;
+  }
+
+  ul{
+    padding-left:0;
+  }
+  
+  li{
+    list-style:none;
+  }
+
+.merit_area {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 1px #FFB080;
+    
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #F8F8F8;
+        color: #FFB080;
+        font-weight: 500;
+    }
+    li {
+      color: #535E61;
+    }
+}
+
+.yellowbase_area {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #FFE279;
+  
+  .box-title {
+      position: absolute;
+      display: inline-block;
+      top: -13px;
+      left: 10px;
+      padding: 0 9px;
+      line-height: 1;
+      font-size: 19px;
+      background: #F8F8F8;
+      color: #f7d763;
+      font-weight: 300;
+  }
+  span {
+    color: #8e9fa4;
+    font-size: 14px;
+  }
+}
+
+.bluebase_area {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #89E5F8;
+  
+  .box-title {
+      position: absolute;
+      display: inline-block;
+      top: -13px;
+      left: 10px;
+      padding: 0 9px;
+      line-height: 1;
+      font-size: 19px;
+      background: #F8F8F8;
+      color: #89E5F8;
+      font-weight: 300;
+  }
+  span {
+    color: #8e9fa4;
+    font-size: 14px;
+  }
+}
+
+.y_basetitle {
+  color: #f7d763;
+}
+
+.b_basetitle {
+  color: #89E5F8;
+}
+
+ /*==================================================
+じわっ
+===================================*/
+
+.blur{
+  animation-name:blurAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0;
+  }
+
+  to {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  }
+}
  
+.blurTrigger{
+    opacity: 0;
+}
+
+/*==================================================
+シャッ
+===================================*/
+
+/*背景色が伸びて出現 共通*/
+.bgextend{
+  animation-name:bgextendAnimeBase;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  position: relative;
+  overflow: hidden;/*　はみ出た色要素を隠す　*/
+  opacity:0;
+}
+
+@keyframes bgextendAnimeBase{
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;  
+}
+}
+
+/*中の要素*/
+.bgappear{
+  animation-name:bgextendAnimeSecond;
+  animation-duration:1s;
+  animation-delay: 0.6s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+
+/*--------- 左から --------*/
+.bgLRextend::before{
+  animation-name:bgLRextendAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #FFB1CA, #CFBAFF);/*伸びる背景色の設定*/
+}
+@keyframes bgLRextendAnime{
+  0% {
+    transform-origin:left;
+    transform:scaleX(0);
+  }
+  50% {
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+  50.001% {
+    transform-origin:right;
+  }
+  100% {
+    transform-origin:right;
+    transform:scaleX(0);
+  }
+}

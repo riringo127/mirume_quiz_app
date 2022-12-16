@@ -6,7 +6,8 @@
           <div class="d-flex flex-column bd-highlight">
             <div class="p-2 bd-highlight pt-4">こんにちは!</div>
             <div class="p-2 bd-highlight pb-5"><i class="fa-solid fa-user me-2"></i><%= @user.name %>さん</div>
-            <div class="p-2 bd-highlight total_cont_border pt-5"><i class="fas fa-award me-2"></i>総クリア数(全<%= @quizzes.length %>色)</div>
+            <hr class="my-4">
+            <div class="p-2 bd-highlight pt-5"><i class="fas fa-award me-2"></i>総クリア数(全<%= @quizzes.length %>色)</div>
             <div class="p-2 bd-highlight pt-2 pb-3">
               <p id="total_count", data-num="<%= @count %>">0</p><span id="total_count_colors">colors<span>
             </div>
@@ -17,59 +18,32 @@
   </div>
   <div class="row mt-5">
     <div class="col-md-4 mt-3">
-      <%= link_to "#" do %>
-        <div class="card border-0 py-3 quiz fadeUp">
-            <div class="card-body text-center text-white">
-              <i class="far fa-check-circle text-white"></i>
-                <%= link_to "クイズに挑戦", quizzes_path, class: "text-white" %>
-              <i class="fas fa-angle-right"></i>
-            </div>
+      <div class="card border-0 py-3 quiz fadeUp">
+        <div class="card-body text-center text-white">
+          <i class="far fa-check-circle text-white"></i>
+            <%= link_to "クイズに挑戦", quizzes_path, class: "text-white" %>
+          <i class="fas fa-angle-right"></i>
         </div>
-      <% end %>
+      </div>
     </div>
     <div class="col-md-4 mt-3">
-      <%= link_to "#" do %>
-        <div class="card border-0 py-3 review fadeUp">
-          <div class="card-body text-center text-white">
-            <i class="fas fa-pen text-white"></i>
-              <%= link_to "復習する", mistakes_quizzes_path, class: "text-white" %>
-            <i class="fas fa-angle-right"></i>
-          </div>
+      <div class="card border-0 py-3 review fadeUp">
+         <div class="card-body text-center text-white">
+          <i class="fas fa-pen text-white"></i>
+            <%= link_to "復習する", mistakes_quizzes_path, class: "text-white" %>
+          <i class="fas fa-angle-right"></i>
         </div>
-      <% end %>
+      </div> 
     </div>
     <div class="col-md-4 mt-3">
-      <%= link_to "#" do %>
-        <div class="card border-0 py-3 index fadeUp">
-          <div class="card-body text-center text-white">
-            <i class="fas fa-list-ul text-white"></i>
-              <%= link_to "色一覧", colors_path, class: "text-white" %>
-            <i class="fas fa-angle-right"></i>
-          </div>
+      <div class="card border-0 py-3 index fadeUp">
+        <div class="card-body text-center text-white">
+          <i class="fas fa-list-ul text-white"></i>
+            <%= link_to "色一覧", colors_path, class: "text-white" %>
+          <i class="fas fa-angle-right"></i>
         </div>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>
-<footer>
-<div id="container_dashboard_footer">
-    <div class="d-flex flex-column bd-highlight mb-3">
-        <div class="p-2 bd-highlight">
-            <%= image_tag 'brand_logo_w.png', class: "footer_logo_size" %>
-        </div>
-        <div class="p-2 bd-highlight">
-            <%= link_to '利用規約', root_path, class: "text-white footer_link" %>
-        </div>
-        <div class="p-2 bd-highlight">
-            <%= link_to 'プライバシーポリシー', root_path, class: "text-white footer_link" %>
-        </div>
-        <div class="p-2 bd-highlight">
-            <%= link_to 'お問合せ', root_path, class: "text-white footer_link" %>
-        </div>
-        <div class="p-2 bd-highlight">
-            <span class="text-white  footer_link">© 2022 mirume.All rights reserved.</span>
-        </div>
-    </div>
-<!--/container--></div> 
-</footer>
 <%= javascript_pack_tag 'dashboard' %>

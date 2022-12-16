@@ -19,11 +19,6 @@
     <% end %>
     <%= render 'shared/flash_message' %>
     <%= yield %>
-    <% if request.path == '/' %>
-      <%= render 'shared/root_floating_btn'%>
-    <% elsif request.path == dashboard_path %>
-    <% else %>
-      <%= render 'shared/footer'%>
-    <% end %>
+    <%= render 'shared/footer' %> 
   </body>
 </html>

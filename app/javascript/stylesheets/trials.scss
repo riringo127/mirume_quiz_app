@@ -34,43 +34,7 @@
     }
 }
 
-.balloon {
-    position: relative;
-    background-color: #F8F8F8;
-    border-bottom: 1px solid #89E5F8;
-    border-image-source: linear-gradient(-85deg, #FFB1CA, #CFBAFF, #89E5F8);
-	border-image-slice: 1;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    }
+.calltoaction {
+    color: #93A2AC;
     
-    .balloon:before,
-    .balloon:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    }
-    
-    .balloon:before {
-    border: 6px solid transparent;
-    border-top: 6px solid #CFBAFF;
-    }
-    
-    .balloon:after {
-    border: solid 7px transparent;
-    border-top: solid 7px #F8F8F8;
-    margin-top: -2.5px;
-    }
-    
-    .balloon p {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(-85deg, #FFB080, #FFB1CA, #CFBAFF);
-    background: -webkit-linear-gradient(0deg, #FFB080, #FFB1CA, #CFBAFF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: .1rem;
-    }
+}
