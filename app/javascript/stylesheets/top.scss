@@ -81,6 +81,97 @@
     font-weight: 100;
   }
 
+  .explanation_pc {
+    background: #F8F8F8;
+  }
+
+  ul{
+    padding-left:0;
+  }
+  
+  li{
+    list-style:none;
+  }
+
+.merit_area {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 1px #FFB080;
+    
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #F8F8F8;
+        color: #FFB080;
+        font-weight: 500;
+    }
+    li {
+      color: #535E61;
+    }
+}
+
+.yellowbase_area {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #FFE279;
+  
+  .box-title {
+      position: absolute;
+      display: inline-block;
+      top: -13px;
+      left: 10px;
+      padding: 0 9px;
+      line-height: 1;
+      font-size: 19px;
+      background: #F8F8F8;
+      color: #f7d763;
+      font-weight: 300;
+  }
+  span {
+    color: #8e9fa4;
+    font-size: 14px;
+  }
+}
+
+.bluebase_area {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #89E5F8;
+  
+  .box-title {
+      position: absolute;
+      display: inline-block;
+      top: -13px;
+      left: 10px;
+      padding: 0 9px;
+      line-height: 1;
+      font-size: 19px;
+      background: #F8F8F8;
+      color: #89E5F8;
+      font-weight: 300;
+  }
+  span {
+    color: #8e9fa4;
+    font-size: 14px;
+  }
+}
+
+.y_basetitle {
+  color: #f7d763;
+}
+
+.b_basetitle {
+  color: #89E5F8;
+}
+
  /*==================================================
 じわっ
 ===================================*/
