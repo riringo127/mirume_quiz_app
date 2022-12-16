@@ -1,7 +1,26 @@
- <div class="container">
-     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-            <span class="all_rights_reserved">© 2022 mirume.All rights reserved.</span>
+<footer>
+  <hr class="my-4 mt-5">
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-lg-10 col-md-10 py-8">
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <%= image_tag 'brand_logo_g.png', class: "footer_logo_size" %>
+          </div>
+          <div class="p-2 bd-highlight">
+            <%= link_to '利用規約', root_path, class: "footer_link ms-1" %>
+          </div>
+          <div class="p-2 bd-highlight">
+            <%= link_to 'プライバシーポリシー', root_path, class: "footer_link ms-1" %>
+          </div>
+          <div class="p-2 bd-highlight">
+            <%= link_to 'お問合せ', root_path, class: "footer_link ms-1" %>
+          </div>
+          <div class="p-2 bd-highlight">
+            <span class="footer_link">© 2022 mirume.All rights reserved.</span>
+          </div>
         </div>
-    </footer>
-</div>
+      </div>
+    </div>
+  </div>
+</footer>
