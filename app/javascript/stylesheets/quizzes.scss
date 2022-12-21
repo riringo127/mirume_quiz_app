@@ -21,22 +21,21 @@
     }
 }
 
-.retry_btn_background {
-    background: linear-gradient(-85deg,#CFBAFF, #89E5F8, #FFE279) fixed; 
-    background-size: 300% 300%; 
-    animation: GradietionAnimation 10s infinite;
+.retrybtn {
+    display: inline-block;
+    padding: 18px 80px;  
+    border-radius:30px;
+    text-decoration: none;
+    border:1px solid #fa6c9f;
+    color: #fa6c9f;
+    outline: none;
+    letter-spacing: .1rem;
 }
 
-.retry_btn {
-    a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-    }
-    a:hover {
-        color: #FFB080;
-    }
+.retrybtn:hover {
+    border-color:transparent;
+    color: #fff;
+    background: #fa6c9f;
 }
 
 .back_link {
@@ -44,7 +43,7 @@
 }
 
 .back_link:hover {
-    color: #FFB080;
+    color: #fa6c9f;
 }
 
 .delete_btn_from_mistakes {
