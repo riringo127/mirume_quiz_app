@@ -12,29 +12,24 @@
     display: none;
   }
 
-  
-.trial-signup_btn_background {
-    background: linear-gradient(-85deg,#CFBAFF, #89E5F8, #FFE279) fixed; 
-    background-size: 300% 300%; 
-    animation: GradietionAnimation 10s infinite;
-}
-
-.trial-signup_btn {
-    a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        color: #F8F8F8;
-        letter-spacing: .2rem;
-        font-weight: 500;
-        font-size: 1.3em;
-    }
-    a:hover {
-        color: #FFB080;
-    }
-}
-
 .calltoaction {
-    color: #93A2AC;
-    
+    color: #93A2AC;  
+}
+
+
+.trialsignupbtn {
+    display: inline-block;
+    padding: 18px 80px;  
+    border-radius:30px;
+    text-decoration: none;
+    border:1px solid #fa6c9f;
+    color: #fa6c9f;
+    outline: none;
+    letter-spacing: .1rem;
+}
+
+.trialsignupbtn:hover {
+    border-color:transparent;
+    color: #fff;
+    background: #fa6c9f;
 }
