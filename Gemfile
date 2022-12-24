@@ -33,6 +33,7 @@ gem 'enum_help'
 gem 'ransack'
 gem 'pry-rails'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
+gem 'config'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
