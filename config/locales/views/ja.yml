@@ -5,6 +5,7 @@ ja:
     logout: 'ログアウト'
     edit: '編集'
     delete: '削除'
+    password_reset: 'パスワードリセット'
     message:
       updated: "%{item}を更新しました"
       not_updated: '%{item}を更新できませんでした'
@@ -42,3 +43,14 @@ ja:
   trials:
     index:
       title: 'お試しクイズ'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+    edit:
+      title: 'パスワードリセット'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      fail: 'パスワードの変更に失敗しました'
