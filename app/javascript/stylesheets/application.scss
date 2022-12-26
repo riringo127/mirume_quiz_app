@@ -1,7 +1,7 @@
-@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap.scss';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'top';
-@import 'header.scss';
+@import 'header';
 @import 'footer';
 @import 'form';
 @import 'dashboard';
@@ -13,7 +13,6 @@
 @import 'color_show';
 @import 'quizzes';
 @import 'trials';
-
 
 body {
     background-color: #F8F8F8;
