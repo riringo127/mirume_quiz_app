@@ -18,31 +18,37 @@
   </div>
   <div class="row mt-5">
     <div class="col-md-4 mt-3">
-      <div class="card border-0 py-3 quiz fadeUp">
-        <div class="card-body text-center text-white">
-          <i class="far fa-check-circle text-white"></i>
-            <%= link_to "クイズに挑戦", quizzes_path, class: "text-white" %>
-          <i class="fas fa-angle-right"></i>
+      <%= link_to quizzes_path, class: "text-white" do %>
+        <div class="card border-0 py-3 quiz fadeUp">
+          <div class="card-body text-center text-white">
+            <i class="far fa-check-circle text-white"></i>
+              <span class="text-white">クイズに挑戦</span>
+            <i class="fas fa-angle-right"></i>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
     <div class="col-md-4 mt-3">
-      <div class="card border-0 py-3 review fadeUp">
-         <div class="card-body text-center text-white">
-          <i class="fas fa-pen text-white"></i>
-            <%= link_to "復習する", mistakes_quizzes_path, class: "text-white" %>
-          <i class="fas fa-angle-right"></i>
-        </div>
-      </div> 
+      <%= link_to mistakes_quizzes_path, class: "text-white" do %>
+        <div class="card border-0 py-3 review fadeUp">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-pen text-white"></i>
+              <span class="text-white">復習する</span>
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div> 
+      <% end %>
     </div>
     <div class="col-md-4 mt-3">
-      <div class="card border-0 py-3 index fadeUp">
-        <div class="card-body text-center text-white">
-          <i class="fas fa-list-ul text-white"></i>
-            <%= link_to "色一覧", colors_path, class: "text-white" %>
-          <i class="fas fa-angle-right"></i>
+      <%= link_to colors_path, class: "text-white" do %>
+        <div class="card border-0 py-3 index fadeUp">
+          <div class="card-body text-center text-white">
+            <i class="fas fa-list-ul text-white"></i>
+              <span class="text-white">色一覧</span>
+            <i class="fas fa-angle-right"></i>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
