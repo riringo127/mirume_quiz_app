@@ -9,7 +9,7 @@
               <h1 class="mb-1 text-center"><%= t '.title' %></h1>
             </div>
             <!-- Form -->
-            <%= form_with model: current_user, url: account_path, local: true do |f| %>
+            <%= form_with model: @user, url: account_path, local: true do |f| %>
               <%= render 'shared/error_messages', object: f.object %>
               <div class="mb-3 form_input">
                 <%= f.label :name %>
