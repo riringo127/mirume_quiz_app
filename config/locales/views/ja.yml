@@ -16,7 +16,7 @@ ja:
     new:
       title: 'アカウント作成'
     create:
-      success: 'アカウントを作成しました。続けてログインインしてください。'
+      success: 'アカウントを作成しました。続けてログインしてください。'
       fail: 'アカウント作成に失敗しました'
   user_sessions:
     new:
