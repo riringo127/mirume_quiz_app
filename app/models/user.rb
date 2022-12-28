@@ -14,4 +14,19 @@ class User < ApplicationRecord
   validates :role, presence: true
   
   enum role: { general: 0, admin: 1 }
+
+  has_many :bookmarks, dependent: :destroy
+  has_many :bookmark_quizzes, through: :bookmarks, source: :quiz
+
+  def bookmark(quiz)
+    bookmark_quizzes << quiz
+  end
+
+  def unbookmark(quiz)
+    bookmark_quizzes.destory (quiz)
+  end
+
+  def bookmark?(quiz)
+    bookmark_quizzes.include?(quiz)
+  end
 end

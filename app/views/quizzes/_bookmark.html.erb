@@ -1,0 +1,7 @@
+<div class="row answer_color_name mb-2">
+  <div class="col d-flex justify-content-end align-items-center">
+    <%= link_to bookmarks_path(quiz_id: quiz.id), id: "js-bookmark-button-for-quiz-#{quiz.id}", class:"bookmark_btn", method: :post do %>
+      <i class="far fa-bookmark"></i>
+    <% end %>
+  </div>
+</div>
