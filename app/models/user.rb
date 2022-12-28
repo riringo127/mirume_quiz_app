@@ -23,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def unbookmark(quiz)
-    bookmark_quizzes.destory (quiz)
+    bookmark_quizzes.destroy (quiz)
   end
 
   def bookmark?(quiz)
