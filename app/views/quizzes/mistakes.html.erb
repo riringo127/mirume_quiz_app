@@ -7,6 +7,18 @@
   </div>
 </div>
 
+<!-- tab -->
+<div class="container-fluid mb-3">
+  <div class="row">
+    <div class="col text-center tab_menu current">
+      <%= link_to "間違えた問題", mistakes_quizzes_path %>
+    </div>
+    <div class="col text-center tab_menu">
+      <%= link_to "ブックマークした問題", "#" %>
+    </div>
+  </div>
+</div>
+
 <% if @quizzes.present? %>
   <div class="mt-5">
     <%= render 'templates/quizzes' %>
