@@ -15,6 +15,10 @@
         色名：<%= quiz.color.name %>
       </div>
     </div>
-    <%= render 'quizzes/bookmark_button', quiz: quiz %>
+    <div class="row answer_color_name mb-2">
+      <div class="col d-flex justify-content-end align-items-center">
+        <%= render 'quizzes/bookmark_button', quiz: quiz %>
+      </div>
+    </div>
   </div>
 </div>

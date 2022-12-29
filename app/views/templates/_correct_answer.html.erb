@@ -1,4 +1,3 @@
-<!-- 解答ここから -->
 <div class="p-2 bd-highlight d-flex justify-content-center border rounded">
   <div class="container-fluid ">
     <div class="row correct_answer_judgement my-2">
@@ -16,7 +15,11 @@
         色名：<%= quiz.color.name %>
       </div>
     </div>
-    <%= render 'quizzes/bookmark_button', quiz: quiz %>
+    <div class="row answer_color_name mb-2">
+      <div class="col d-flex justify-content-end align-items-center">
+        <%= render 'quizzes/bookmark_button', quiz: quiz %>
+      </div>
+    </div>
   </div>
 </div>
-<!-- 解答ここまで -->
+

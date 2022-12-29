@@ -1,7 +1,4 @@
-<div class="row answer_color_name mb-2">
-  <div class="col d-flex justify-content-end align-items-center">
-    <%= link_to bookmark_path(current_user.bookmarks.find_by(quiz_id: quiz.id)), id: "js-bookmark-button-for-quiz-#{quiz.id}", class:"bookmark_btn", method: :delete do %>
-      <i class="fas fa-bookmark"></i>
-    <% end %>
-  </div>
-</div>
+<%= link_to bookmark_path(current_user.bookmarks.find_by(quiz_id: quiz.id)), id: "js-bookmark-button-for-quiz-#{quiz.id}", class:"bookmark_btn", method: :delete, remote: true do %>
+  <i class="fas fa-bookmark"></i>
+<% end %>
+  
