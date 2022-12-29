@@ -40,6 +40,9 @@ ja:
     mistakes:
       title: '復習'
       no_result: '間違えた問題はありません'
+    bookmarks:
+      title: '復習'
+      no_result: 'ブックマークした問題はありません'
   trials:
     index:
       title: 'お試しクイズ'

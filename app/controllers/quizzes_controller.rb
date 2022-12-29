@@ -11,4 +11,8 @@ class QuizzesController < ApplicationController
       @quizzes.sort_by! {rand}
     end
   end
+
+  def bookmarks
+    @quizzes = current_user.bookmark_quizzes.order(created_at: :desc)
+  end
 end

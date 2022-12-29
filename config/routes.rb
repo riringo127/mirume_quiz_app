@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   delete 'logout', to: 'user_sessions#destroy'
 
   get 'dashboard', to: 'dashboards#top'
-  get 'review', to: 'reviews#top'
 
   resources :users, only: %i[new create]
   resource :account, only: %i[show edit update destroy]
@@ -18,6 +17,9 @@ Rails.application.routes.draw do
     resources :correct_answers, only: %i[create]
     collection do
       get :mistakes
+    end
+    collection do
+      get :bookmarks
     end
   end
   resources :bookmarks, only: %i[create destroy]
