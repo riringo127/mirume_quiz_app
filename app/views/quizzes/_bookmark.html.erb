@@ -1,0 +1,4 @@
+<%= link_to bookmarks_path(quiz_id: quiz.id), id: "js-bookmark-button-for-quiz-#{quiz.id}", class:"bookmark_btn", method: :post, remote: true do %>
+  <i class="far fa-bookmark"></i>
+<% end %>
+ 

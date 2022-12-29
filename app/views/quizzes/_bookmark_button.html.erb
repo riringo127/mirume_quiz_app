@@ -1,0 +1,5 @@
+<% if current_user.bookmark?(quiz) %>
+  <%= render 'quizzes/unbookmark', { quiz: quiz } %>
+<% else %>
+  <%= render 'quizzes/bookmark', { quiz: quiz } %>
+<% end %>

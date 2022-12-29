@@ -38,8 +38,11 @@ ja:
     index:
       title: '色識別クイズ'
     mistakes:
-      title: '間違えた問題'
+      title: '復習'
       no_result: '間違えた問題はありません'
+    bookmarks:
+      title: '復習'
+      no_result: 'ブックマークした問題はありません'
   trials:
     index:
       title: 'お試しクイズ'
