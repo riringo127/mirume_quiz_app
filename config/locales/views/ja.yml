@@ -34,6 +34,9 @@ ja:
   colors:
     index:
       title: '色一覧'
+    favorites:
+      title: '色一覧'
+      no_result: 'お気に入りの色はありません'
   quizzes:
     index:
       title: '色識別クイズ'

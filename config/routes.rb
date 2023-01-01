@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   resources :users, only: %i[new create]
   resource :account, only: %i[show edit update destroy]
 
-  resources :colors, only: %i[index show]
+  resources :colors, only: %i[index show] do
+    collection do
+      get :favorites
+    end
+  end
   resources :quizzes, only: %i[index] do
     resources :incorrect_answers, only: %i[create destroy]
     resources :correct_answers, only: %i[create]
@@ -23,6 +27,7 @@ Rails.application.routes.draw do
     end
   end
   resources :bookmarks, only: %i[create destroy]
+  resources :favorites, only: %i[create destroy]
   resources :trials, only: %i[index] 
   resources :password_resets, only: %i[new create edit update]
 end

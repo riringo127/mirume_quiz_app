@@ -11,4 +11,8 @@ class ColorsController < ApplicationController
   def show
     @color = Color.find(params[:id])
   end
+
+  def favorites
+    @colors = current_user.favorite_colors.order(created_at: :desc)
+  end
 end
