@@ -1,0 +1,5 @@
+<% if current_user.favorite?(color) %>
+  <%= render 'unfavorite', { color: color } %>
+<% else %>
+  <%= render 'favorite', { color: color } %>
+<% end %>

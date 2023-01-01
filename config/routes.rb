@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     end
   end
   resources :bookmarks, only: %i[create destroy]
+  resources :favorites, only: %i[create destroy]
   resources :trials, only: %i[index] 
   resources :password_resets, only: %i[new create edit update]
 end

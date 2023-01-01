@@ -2,10 +2,8 @@
 <div class="color_detail mt-5">
     <div class="d-flex flex-column bd-highlight mb-3 justify-content-center">
       <div class="p-2 bd-highlight d-flex justify-content-center color_show_name">
-        <%= @color.name %>
-        <%= link_to "#" do %>
-          <i class="far fa-heart ms-3 favorite_btn_for_show"></i>
-        <% end %>
+        <span class="me-3"><%= @color.name %><span>
+        <%= render 'favorite_button', color: @color %>
       </div>
       <div class="p-2 bd-highlight d-flex justify-content-center color_show_code">
         <%= @color.code %>

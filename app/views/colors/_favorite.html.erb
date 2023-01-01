@@ -1,0 +1,3 @@
+<%= link_to favorites_path(color_id: color.id), id: "js-favorite-button-for-color-#{color.id}", method: :post, remote: true do %>
+  <span class="favorite_btn"><i class="far fa-heart"></i></span>
+<% end %>
