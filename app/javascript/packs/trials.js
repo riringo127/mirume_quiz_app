@@ -75,5 +75,3 @@ document.getElementById("twitter-share-button").onclick = function() {
   // URLを生成して遷移
   window.open("https://twitter.com/share?text=" + text + title + "&hashtags=" + hashtags + "&url=" + url);
 }
-
-  
