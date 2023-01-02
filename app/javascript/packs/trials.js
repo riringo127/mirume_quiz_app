@@ -69,7 +69,7 @@ document.getElementById("twitter-share-button").onclick = function() {
   let text = document.getElementById("tweet-text").innerText;
 
   // オプションパラメータを設定
-  let hashtags = ["パーソナルカラー", "パーソナルカラー色識別"];
+  let hashtags = ["パーソナルカラー", "色識別クイズアプリmirume"];
   let url = encodeURIComponent(location.href)  // location.hrefは今いるURL
 
   // URLを生成して遷移

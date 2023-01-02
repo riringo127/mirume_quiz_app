@@ -7,9 +7,18 @@
             <div class="p-2 bd-highlight pt-4">こんにちは!</div>
             <div class="p-2 bd-highlight pb-5"><%= current_user.name %>さん</div>
             <hr class="my-4">
-            <div class="p-2 bd-highlight pt-5"><i class="fas fa-award me-2"></i>総クリア数(全<%= @quizzes.length %>色)</div>
-            <div class="p-2 bd-highlight pt-2 pb-3">
-              <p id="total_count", data-num="<%= @count %>">0</p><span id="total_count_colors">colors<span>
+            <div classa="tweet-text", id="tweet-text">
+              <div class="p-2 bd-highlight pt-5"><i class="fas fa-award me-2"></i>総クリア数(全<%= @quizzes.length %>色)</div>
+              <div class="p-2 bd-highlight pt-2 pb-1">
+                <p id="total_count", data-num="<%= @count %>">0</p><span id="total_count_colors">colors<span>
+              </div>
+            </div>
+            <div class="p-2 bd-highlight pb-3">
+              <!-- ツイートボタン --!>
+              <div class="tweet" id="tweet">
+                  <button id="twitter-share-button"><i class="fab fa-twitter me-1"></i>結果をシェア</button>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
             </div>
           </div>
         </div>
