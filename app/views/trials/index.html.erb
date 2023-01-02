@@ -103,8 +103,15 @@
           <div class="row mb-3">
             <div class="col result_area">
               <span class="box-title">採点結果</span>
-                <div class="d-flex justify-content-center align-items-center mt-3">
+                <div class="d-flex justify-content-center align-items-center mt-3 tweet-text", id="tweet-text">
                   <p><%= @quizzes.length %>問中</p><p id="count">0</p><p>問正解!</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <!-- ツイートボタン --!>
+                  <div class="tweet" id="tweet">
+                      <button id="twitter-share-button"><i class="fab fa-twitter me-1"></i>結果をシェア</button>
+                      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
                 </div>
             </div>
           </div>
