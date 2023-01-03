@@ -60,3 +60,6 @@ ja:
     update:
       success: 'パスワードを変更しました'
       fail: 'パスワードの変更に失敗しました'
+  static_pages:
+    privacy_policy:
+      title: 'プライバシーポリシー'
