@@ -4,8 +4,8 @@ class IncorrectAnswersController < ApplicationController
         current_user.incorrect_answers.create(quiz_id: @quiz.id)
     end
 
-    def destroy
+    def update
         @quiz =Quiz.find(params[:quiz_id])
-        current_user.incorrect_answers.where(quiz_id: @quiz.id).destroy_all
+        current_user.incorrect_answers.where(quiz_id: @quiz.id).update_all(display: 1)
     end
 end
