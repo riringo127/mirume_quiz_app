@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     end
   end
   resources :quizzes, only: %i[index] do
-    resources :incorrect_answers, only: %i[create destroy]
+    resources :incorrect_answers, only: %i[create update]
     resources :correct_answers, only: %i[create]
     collection do
       get :mistakes

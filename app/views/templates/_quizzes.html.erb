@@ -5,6 +5,16 @@
         <div class="col-lg-8 col-md-8 py-8">
           <div class="card mb-3 border-0">
             <div class="card-body">
+              <div class="d-flex justify-content-end accuracy_rate pe-2">
+                <% correct_count = quiz.correct_answers.count %>
+                <% total_count = quiz.correct_answers.count + quiz.incorrect_answers.count %>
+                <% if total_count != 0 %>
+                  <% rate = correct_count.to_f / total_count.to_f %>
+                  正解率:<%= rate.floor(2) * 100  %>%
+                <% else %>
+                  正解率:--%
+                <% end %>
+              </div>
               <div class="d-flex flex-column bd-highlight my-2 justify-content-center">
                 <div class="question_num p-2 bd-highlight d-flex justify-content-center">
                   Q.<%= i + 1 %>
@@ -38,7 +48,7 @@
                 <% if request.url.include?('mistakes') %>
                   <div class="p-2 bd-highlight d-flex justify-content-end">
                     <div class="delete_btn_from_mistakes" %>
-                      <%= link_to quiz_incorrect_answer_path(quiz, current_user.id), method: :delete, remote: true do %>
+                      <%= link_to quiz_incorrect_answer_path(quiz, current_user.id), method: :patch, remote: true do %>
                         覚えた！<i class="far fa-trash-alt me-1"></i>
                       <% end %>
                     </div>
