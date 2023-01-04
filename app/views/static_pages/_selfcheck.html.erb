@@ -1,0 +1,93 @@
+<!-- セルフ診断ここから -->
+<div class="container mt-2">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-8 col-md-8 py-8">
+      <div class="card mb-2 border-0 py-3">
+        <div class="card-body">
+          <h5 class="selfcheck-title d-flex align-items-center justify-content-center">パーソナルカラーセルフ診断</h5>
+          <hr class="my-4">
+          <p class="selfcheck-text d-flex align-items-center justify-content-center">簡単30秒！あなたのタイプをチェック！<br>
+          </p>
+          <div id="main">
+            <div id="question_area" class="mt-4">
+                <div id="q1" class="txt_display">唇は、オレンジと赤紫なら、<br>オレンジ色に近い。</div>
+                <div id="q2" class="txt_hide">黒とキャメルなら<br>キャメルの方が肌が綺麗に見える。</div>
+                <div id="q3" class="txt_hide">黒髪より茶髪の方が肌が綺麗に見える。</div>
+                <div id="q4" class="txt_hide">頬に赤みが出やすい。</div>
+                <div id="q5" class="txt_hide">黒目と白目のコントラストが<br>はっきりしている。</div>
+                <div id="q6" class="txt_hide">瞳の色が薄いブラウンで<br>虹彩がはっきり見える。</div>
+            </div>
+            <div id="result_area" class="txt_hide">
+                <p>あなたのタイプは……</p>
+                <div id="a1" class="txt_hide">
+                    <h2 class="mt-3">ウィンター</h2>
+                    <%= image_tag 'palette_wi.png', class: "card-img-top" %>
+                </div>
+                <div id="a2" class="txt_hide">
+                    <h2 class="mt-3">サマー</h2>
+                    <%= image_tag 'palette_su.png', class: "card-img-top" %>
+                </div>
+                <div id="a3" class="txt_hide">
+                    <h2 class="mt-3">スプリング</h2>
+                    <%= image_tag 'palette_sp.png', class: "card-img-top" %>
+                </div>
+                <div id="a4" class="txt_hide">
+                    <h2 class="mt-3">オータム</h2>
+                    <%= image_tag 'palette_au.png', class: "card-img-top" %>
+                </div>
+                <div class="mt-4">
+                  <a href="javaScript:OnAgainClick();" id="recheck_a">
+                    <div id="btn_recheck">
+                      もう1回
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div id="btn_area" class="txt_display">
+                <a href="javascript:OnYesClick();" id="btn_yes">Yes</a>
+                <a href="javascript:OnNoClick();" id="btn_no">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- セルフ診断ここまで -->
+<script>
+  var qArray = ['q1','q2','q3','q4','q5','q6'];
+  var yesArray = ['q3','q4','q6','q5','a1','a3'];
+  var noArray = ['q2','q5','q4','q6','a2','a4'];
+  var n=0;
+  function OnYesClick() {
+      RewriteSrc(yesArray[n])
+  }
+  function OnNoClick() {
+      RewriteSrc(noArray[n])
+  }
+  function RewriteSrc(nextId) {
+      if (nextId.startsWith('q')==true){
+          for (i=0; i<qArray.length+1; i++) {
+              if (qArray[i]==nextId) {
+                  document.getElementById(qArray[n]).className = "txt_hide";
+                  n=i;
+                  document.getElementById(qArray[n]).className = "txt_display";
+                  break;
+              }
+          }
+      } else {
+          document.getElementById(qArray[n]).className = "txt_hide";
+          document.getElementById('btn_area').className = "txt_hide";
+          document.getElementById('result_area').className = "txt_display";
+          document.getElementById(nextId).className = "txt_display";
+      }
+  }
+  function OnAgainClick() {
+      document.getElementById(yesArray[n]).className = "txt_hide";
+      document.getElementById(noArray[n]).className = "txt_hide";
+      n=0;
+      document.getElementById(qArray[n]).className = "txt_display";
+      document.getElementById('btn_area').className = "txt_display";
+      document.getElementById('result_area').className = "txt_hide";
+  }
+  </script>
