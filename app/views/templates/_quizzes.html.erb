@@ -10,7 +10,8 @@
                 <% total_count = quiz.correct_answers.count + quiz.incorrect_answers.count %>
                 <% if total_count != 0 %>
                   <% rate = correct_count.to_f / total_count.to_f %>
-                  正解率:<%= rate.floor(2) * 100  %>%
+                  <% accuracy_rate = rate * 100 %>
+                  正解率:<%= accuracy_rate.to_i %>%
                 <% else %>
                   正解率:--%
                 <% end %>
