@@ -12,8 +12,8 @@ document.getElementById("twitter-share-button").onclick = function() {
     let text = document.getElementById("tweet-text").innerText;
   
     // オプションパラメータを設定
-    let hashtags = ["パーソナルカラー", "パーソナカラー診断" , "イエベ", "ブルベ", "mirume"];
-    let url = encodeURIComponent(location.href)  // location.hrefは今いるURL
+    let hashtags = ["パーソナルカラー", "パーソナカラー診断" , "イエベ", "ブルベ", "パーソナルカラー色識別クイズアプリmirume"];
+    let url = "https://www.mirume-personalcolor.com/"
   
     // URLを生成して遷移
     window.open("https://twitter.com/share?text=" + title + text  + "&hashtags=" + hashtags + "&url=" + url);
