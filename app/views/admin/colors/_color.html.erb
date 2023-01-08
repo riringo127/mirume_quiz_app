@@ -1,0 +1,25 @@
+<tr>
+  <td>
+    <%= color.id %>
+  </td>
+  <td>
+    <%= color.name %>
+  </td>
+  <td>
+    <%= color.code %>
+  </td>
+  <td>
+    <%= color.css_class %>
+  </td>
+  <td>
+    <%= color.season_type_i18n %>
+  </td>
+  <td>
+    <%= color.category_id %>:<%= color.category.name %>
+  </td>
+  <td>
+    <%= link_to 'Show', admin_color_path(color), class: 'btn btn-info' %>
+    <%= link_to 'Edit', edit_admin_color_path(color), class: 'btn btn-success' %>
+    <%= link_to 'Delete', admin_color_path(color), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  </td>
+</tr>

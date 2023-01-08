@@ -1,0 +1,33 @@
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1 class="mt-5">色編集</h1>
+      ID:<%= @color.id %>
+      <div class="color_box <%= @color.css_class %>"></div>
+      <%= form_with model: @color, url: admin_color_path(@color), local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+        <div class="form-group mt-3">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :code %>
+          <%= f.text_field :code, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :css_class %>
+          <%= f.text_field :css_class, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :season_type %>
+          <%= f.select :season_type, Color.season_types.keys.to_a, {}, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :category_id %>
+          <%= f.select :category_id, [ ["ピンク",1], ["レッド", 2], ["パープル", 3 ] ,["ブルー", 4], ["グリーン", 5], ["イエロー", 6], ["オレンジ",7], ["ブラウン", 8], ["ベージュ", 9] ,["グレイ", 10], ["ホワイト", 11], ["ブラック", 12] ], prompt: "カテゴリーを選択してください", class: "form-control" %>
+        </div>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
