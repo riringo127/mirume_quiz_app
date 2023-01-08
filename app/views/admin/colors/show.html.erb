@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1 class="mt-5">色詳細</h1>
+      <div class="text-right mb-3">
+        <%= link_to 'Edit', edit_admin_color_path(@color), class: 'btn btn-success' %>
+        <%= link_to 'Delete', admin_color_path(@color), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+      </div>
+      <div class="color_box <%= @color.css_class %>"></div>
+      <table class="table table-bordered bg-white mt-3">
+        <tr>
+          <th scope="row">ID</th>
+          <td><%= @color.id %></td>
+        </tr>
+        <tr>
+          <th scope="row">色名</th>
+          <td><%= @color.name %></td>
+        </tr>
+        <tr>
+          <th scope="row">カラーコード</th>
+          <td><%= @color.code %></td>
+        </tr>
+        <tr>
+          <th scope="row">css_class</th>
+          <td><%= @color.css_class %></td>
+        </tr>
+        <tr>
+          <th scope="row">season_type</th>
+          <td><%= @color.season_type_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row">category_id</th>
+          <td><%= @color.category_id %>:<%= @color.category.name %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

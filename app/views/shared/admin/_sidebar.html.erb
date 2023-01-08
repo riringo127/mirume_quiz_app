@@ -16,17 +16,17 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <%= link_to "#", class: "nav-link", method: :get do %>
+          <%= link_to admin_users_path, class: "nav-link", method: :get do %>
             <i class="nav-icon fas fa-user"></i>
             <p>
-              User List
+              ユーザー一覧
             </p>
           <% end %>
         </li>
       </ul>
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <%= link_to "#", class: "nav-link", method: :get do %>
+          <%= link_to admin_colors_path, class: "nav-link", method: :get do %>
             <i class="nav-icon fas fa-file"></i>
             <p>
               色一覧
