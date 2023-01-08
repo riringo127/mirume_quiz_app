@@ -33,4 +33,11 @@ Rails.application.routes.draw do
   resources :favorites, only: %i[create destroy]
   resources :trials, only: %i[index] 
   resources :password_resets, only: %i[new create edit update]
+
+  namespace :admin do
+    root to: 'dashboards#index'
+    get 'login', to: 'user_sessions#new'
+    post 'login', to: 'user_sessions#create'
+    delete 'logout', to: 'user_sessions#destroy'
+  end
 end

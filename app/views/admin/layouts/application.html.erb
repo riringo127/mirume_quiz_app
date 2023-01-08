@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Starter</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <%= render 'shared/admin/header' %>
+    <%= render 'shared/admin/sidebar' %>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">                                    
+      <%= yield %>
+    </div>
+    <!-- /.content-wrapper -->
+    <%= render 'shared/admin/footer' %>
+  </div>
+<!-- ./wrapper -->
+</body>
+</html>
