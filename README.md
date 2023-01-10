@@ -56,6 +56,10 @@ https://www.mirume-personalcolor.com/
 * 総クリア数をTwitterでシェアすることができます。
 [![Image from Gyazo](https://i.gyazo.com/afd22ef7ceae2e2145f99bfc7fcfbd54.jpg)](https://gyazo.com/afd22ef7ceae2e2145f99bfc7fcfbd54)
 
+### パーソナルカラーセルフ診断（ログイン不要)
+* YES/NOチャート式のパーソナルカラーセルフ診断を体験できます。
+[![Image from Gyazo](https://i.gyazo.com/8ab0a291c7e8ccc0d37b8d62fbe58854.png)](https://gyazo.com/8ab0a291c7e8ccc0d37b8d62fbe58854)
+
 ## 使用技術
 | バックエンド | フロントエンド | インフラ・その他 |
 | :---: | :---: | :---: |
