@@ -23,27 +23,43 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'net-smtp'
 
-gem 'sorcery'
+# UI/UX
 gem 'rails-i18n'
 gem 'enum_help'
+
+# Authentication
+gem 'sorcery'
+
+# Environments
+gem 'config'
+gem 'dotenv-rails'
+
+#  Search
 gem 'ransack'
+
+#  Seo
+gem 'meta-tags'
+
 gem 'pry-rails'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
-gem 'config'
 gem 'net-imap'
 gem 'net-pop'
 gem 'net-smtp'
-gem 'meta-tags'
-gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Mail
   gem 'letter_opener_web', '~> 1.0'
+  # Test
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -56,6 +72,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
