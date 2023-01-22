@@ -1,6 +1,7 @@
 class QuizzesController < ApplicationController
   def index
-    @quizzes = Quiz.all.sample(20)
+    @q = Quiz.ransack(params[:q])
+    @quizzes = @q.result(distinct: true).sample(20)
   end
 
   def mistakes
