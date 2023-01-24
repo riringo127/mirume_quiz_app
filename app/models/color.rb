@@ -1,6 +1,6 @@
 class Color < ApplicationRecord
   belongs_to :category
-  has_one :quiz, dependent: :destroy
+  has_many :quizzes, dependent: :destroy
   has_many :favorites, dependent: :destroy
 
   validates :name, presence: true, uniqueness: true

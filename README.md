@@ -66,7 +66,7 @@ https://www.mirume-personalcolor.com/
 | Ruby(3.1.3)<br>Ruby on Rails(6.1.7) | bootstrap<br>JavaScript | PostgreSQL<br>Heroku |
 
 ## ER図
-[![Image from Gyazo](https://i.gyazo.com/921e1bfc6440bb9a8847202b2fedcc69.png)](https://gyazo.com/921e1bfc6440bb9a8847202b2fedcc69)
+[![Image from Gyazo](https://i.gyazo.com/ccd9ac4ba780845574772192820acc47.png)](https://gyazo.com/ccd9ac4ba780845574772192820acc47)
 
 ## 画面遷移図
 [Figma](https://www.figma.com/file/m3zx6nplIatJjAKiIHF1aU/mirume?node-id=0%3A1&t=pQPgWhhduarVF1he-1)

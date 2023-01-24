@@ -23,6 +23,18 @@ Rails.application.routes.draw do
     resources :incorrect_answers, only: %i[create update]
     resources :correct_answers, only: %i[create]
     collection do
+      get :is_spring
+    end
+    collection do
+      get :is_summer
+    end
+    collection do
+      get :is_autumn
+    end
+    collection do
+      get :is_winter
+    end
+    collection do
       get :mistakes
     end
     collection do

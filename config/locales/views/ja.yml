@@ -40,6 +40,14 @@ ja:
   quizzes:
     index:
       title: '色識別クイズ'
+    is_spring:
+      title: '色識別クイズ'
+    is_summer:
+      title: '色識別クイズ'
+    is_autumn:
+      title: '色識別クイズ'
+    is_winter:
+      title: '色識別クイズ'
     mistakes:
       title: '復習'
       no_result: '間違えた問題はありません'
