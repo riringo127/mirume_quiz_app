@@ -20,12 +20,32 @@
                 <div class="question_num p-2 bd-highlight d-flex justify-content-center">
                   Q.<%= i + 1 %>
                 </div>
-                <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                <!-- 問題文ここから -->
+                <% if quiz.quiz_format == "spring" %>
+                  <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                    この色はスプリングタイプ？
+                  </div>
+                <% elsif quiz.quiz_format == "summer" %>
+                  <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                    この色はサマータイプ？
+                  </div>
+                <% elsif quiz.quiz_format == "autumn" %>
+                  <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                    この色はオータムタイプ？
+                  </div>
+                <% elsif quiz.quiz_format == "winter" %>
+                  <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
+                    この色はウィンタータイプ？
+                  </div>
+                <% else %>
+                  <div class="p-2 bd-highlight d-flex justify-content-center quiz_title">
                     この色のパーソナルカラータイプは？
-                </div>
+                  </div>
+                <% end %>
                 <div class="p-2 bd-highlight d-flex justify-content-center">
                   <div class="color_box <%= quiz.color.css_class %>"></div>
                 </div>
+                <!-- 問題文ここまで -->
                 <!-- choicesここから -->
                 <div id="js-choice-button-for-quiz-<%= quiz.id %>">
                   <div class="p-2 bd-highlight d-flex justify-content-center mt-2" >
