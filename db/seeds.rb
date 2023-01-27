@@ -193,80 +193,80 @@
 
 # シーズン別クイズ追加
 # quiz_format => springのクイズ
-Color.count.times do |n|
-  Quiz.create(:color_id => n+1, :quiz_format => 1)
-end
+# Color.count.times do |n|
+#   Quiz.create(:color_id => n+1, :quiz_format => 1)
+# end
   
 # quiz_format => summerのクイズ
-Color.count.times do |n|
-  Quiz.create(:color_id => n+1, :quiz_format => 2)
-end
+# Color.count.times do |n|
+#   Quiz.create(:color_id => n+1, :quiz_format => 2)
+# end
   
 # quiz_format => autumnのクイズ
-Color.count.times do |n|
-  Quiz.create(:color_id => n+1, :quiz_format => 3)
-end
+# Color.count.times do |n|
+#   Quiz.create(:color_id => n+1, :quiz_format => 3)
+# end
   
 # quiz_format => winterのクイズ
-Color.count.times do |n|
-  Quiz.create(:color_id => n+1, :quiz_format => 4)
-end
+# Color.count.times do |n|
+#   Quiz.create(:color_id => n+1, :quiz_format => 4)
+# end
 
 # 選択肢
 # quiz_id:129~256 「スプリングか？」の選択肢
 # スプリングを出題
-# 129.upto(160) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
-# }
+129.upto(160) {|n|
+ Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
+}
 # スプリング以外を出題
-# 161.upto(256) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+161.upto(256) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 
 # quiz_id:257~384 「サマーか？」の選択肢
 # スプリング出題
-# 257.upto(288) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+257.upto(288) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 # サマーを出題
-# 289.upto(320) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
-# }
+289.upto(320) {|n|
+ Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
+}
 # オータム・ウィンター出題
-# 321.upto(384) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+321.upto(384) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 
 # quiz_id:385~512 「オータムか？」の選択肢
 # スプリング・サマー出題
-# 385.upto(448) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+385.upto(448) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 # オータムを出題
-# 449.upto(480) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
-# }
+449.upto(480) {|n|
+ Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
+}
 # ウィンター出題
-# 481.upto(512) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+481.upto(512) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 
 # quiz_id:513~640 「ウィンターか？」の選択肢
 # ウィンター以外を出題
-# 513.upto(608) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
-# }
+513.upto(608) {|n|
+ Choice.create(:content => 'はい', :is_answer => 1, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 0, :quiz_id => n)
+}
 # ウィンターを出題
-# 609.upto(640) {|n|
-#  Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
-#  Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
-# }
+609.upto(640) {|n|
+ Choice.create(:content => 'はい', :is_answer => 0, :quiz_id => n)
+ Choice.create(:content => 'いいえ', :is_answer => 1, :quiz_id => n)
+}
