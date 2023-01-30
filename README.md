@@ -8,10 +8,22 @@ https://www.mirume-personalcolor.com/
 パーソナルカラー識別クイズアプリです。
 
 ## 製作背景
+### パーソナルカラーとは
 パーソナルカラーとは、生まれ持ったボディーカラーをもとに個人（Personal）に似合う色（Color）を診断する手法です。
+
+[![Image from Gyazo](https://i.gyazo.com/25848bf82702af2c09970419e5a8b357.png)](https://gyazo.com/25848bf82702af2c09970419e5a8b357)
+
+[![Image from Gyazo](https://i.gyazo.com/7547ef43135649ab0873f5bb2e3ae129.png)](https://gyazo.com/7547ef43135649ab0873f5bb2e3ae129)
+
+[![Image from Gyazo](https://i.gyazo.com/6bd51f8a6c2829fa12144ba463d0593d.png)](https://gyazo.com/6bd51f8a6c2829fa12144ba463d0593d)
+
+### ユーザーの課題
 ここ数年で認知度が上がり、自分のパーソナルカラーのタイプ（春・夏・秋・冬の計4タイプ）を知っている人も増えました。
 しかし、いざ自分のパーソナルカラーにあわせて洋服やコスメ等の商品を選ぼうと思っても、難しいというのが現状です。
 なぜなら世の中で売られている大半の商品は、パーソナルカラーで分類されてはいないからです。
+また、いざ色の識別を勉強しようと思っても、教材は「書籍」や「診断用のドレープ（布）」しかなく、効率的な学習が難しいというのが現状です。
+
+[![Image from Gyazo](https://i.gyazo.com/4a66815331c1aa3f13860e038668fb64.png)](https://gyazo.com/4a66815331c1aa3f13860e038668fb64)
 
 そこで、パーソナルカラーにあった色を選びたい人が、
 商品の色を自分で識別できるようになるための、
@@ -24,11 +36,16 @@ https://www.mirume-personalcolor.com/
 
 ## メイン機能
 ### クイズ出題機能（要ログイン）
-* ランダムに出題される色のパーソナルカラータイプを4択から選択肢し、解答することができます。
+* 4択クイズ（上級者向け）：ランダムに出題される色のパーソナルカラータイプを4択（春・夏・秋・冬）から選択肢し、解答することができます。
+[![Image from Gyazo](https://i.gyazo.com/343d80c8787b94a807ef1a0a4bb7b8ad.gif)](https://gyazo.com/343d80c8787b94a807ef1a0a4bb7b8ad)
+
+* 2択クイズ（初心者向け）：ランダムに出題される色が、該当のタイプか否かの2択で解答することができます。
+[![Image from Gyazo](https://i.gyazo.com/1664d38283c4a508bdf19210c3d5cf22.gif)](https://gyazo.com/1664d38283c4a508bdf19210c3d5cf22)
+
+* 色のカテゴリー（赤、青、黄など）で絞り込んだ出題が可能です。
 * 出題された色の正解率が表示され、問題の難易度を知ることができます。
 * 1問解答するごとに答えが表示されます。
-* 全20問中何問正解したか採点結果を最後に確認することができます。
-[![Image from Gyazo](https://i.gyazo.com/040b14313fbb321bf4bcbc9994367672.png)](https://gyazo.com/040b14313fbb321bf4bcbc9994367672)
+* 全10or20問中何問正解したか採点結果を最後に確認することができます。
 [![Image from Gyazo](https://i.gyazo.com/07043d73a9319d0731fdbfecec1d0de4.png)](https://gyazo.com/07043d73a9319d0731fdbfecec1d0de4)
 
 ### お試しクイズ出題機能（ログイン不要）
@@ -49,7 +66,7 @@ https://www.mirume-personalcolor.com/
 
 ### 総クリア数（要ログイン）
 * 全128色中、何色クリアしたかを確認することができます。
-[![Image from Gyazo](https://i.gyazo.com/dfeee6b0e977c5ca1da2b1d768f9a562.png)](https://gyazo.com/dfeee6b0e977c5ca1da2b1d768f9a562)
+[![Image from Gyazo](https://i.gyazo.com/d5f75d0ce43ff882802842ba9bfe5413.gif)](https://gyazo.com/d5f75d0ce43ff882802842ba9bfe5413)
 
 ### Twitterシェア機能
 * クイズの採点結果をTwitterでシェアすることができます。
@@ -59,6 +76,23 @@ https://www.mirume-personalcolor.com/
 ### パーソナルカラーセルフ診断（ログイン不要)
 * YES/NOチャート式のパーソナルカラーセルフ診断を体験できます。
 [![Image from Gyazo](https://i.gyazo.com/8ab0a291c7e8ccc0d37b8d62fbe58854.png)](https://gyazo.com/8ab0a291c7e8ccc0d37b8d62fbe58854)
+
+## 運用実績
+### UGC投稿
+* 多くの方が採点結果や総クリア数をTwitterでシェアしてくださっています。
+[![Image from Gyazo](https://i.gyazo.com/cddfe0efeadd5bdd445bc0463e0fab88.jpg)](https://gyazo.com/cddfe0efeadd5bdd445bc0463e0fab88)
+
+### Twitterでの拡散活動
+* Twitterで毎日色識別クイズを出題し、新規流入のための拡散活動を行なっています。
+[![Image from Gyazo](https://i.gyazo.com/dc91d77680eceeba26f158b7a51db007.png)](https://gyazo.com/dc91d77680eceeba26f158b7a51db007)
+
+### 現職（パーソナルカラープロ養成スクール）とのコラボ企画（調整中）
+* 現在調整中
+[![Image from Gyazo](https://i.gyazo.com/0bf207241078a265c19a42042aa46147.png)](https://gyazo.com/0bf207241078a265c19a42042aa46147)
+
+### リリース4週間でのPV/UU数
+* 4,098PV
+* 428UU
 
 ## 使用技術
 | バックエンド | フロントエンド | インフラ・その他 |
