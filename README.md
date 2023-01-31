@@ -88,11 +88,11 @@ https://www.mirume-personalcolor.com/
 
 ### 現職（パーソナルカラープロ養成スクール）とのコラボ企画（調整中）
 * 現在調整中
-[![Image from Gyazo](https://i.gyazo.com/0bf207241078a265c19a42042aa46147.png)](https://gyazo.com/0bf207241078a265c19a42042aa46147)
+[![Image from Gyazo](https://i.gyazo.com/1200945fe46ec4d4a1e75149c097da41.png)](https://gyazo.com/1200945fe46ec4d4a1e75149c097da41)
 
-### リリース4週間でのPV/UU数
-* 4,098PV
-* 428UU
+### リリース1ヶ月でのPV/UU数
+* PV数：4,108
+* UU数：430
 
 ## 使用技術
 | バックエンド | フロントエンド | インフラ・その他 |
