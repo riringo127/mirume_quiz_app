@@ -21,7 +21,8 @@ class QuizzesController < ApplicationController
   end
 
   def mistakes
-    mistakes = current_user.incorrect_answers.where(display: 0).select(:quiz_id).distinct
+    @q = current_user.incorrect_answers.ransack(params[:q])
+    mistakes = @q.result(distinct: true).where(display: 0).select(:quiz_id).distinct
     @quizzes = []
     mistakes.each do |mis|
       @quizzes << mis.quiz
