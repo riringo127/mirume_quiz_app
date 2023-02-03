@@ -273,31 +273,31 @@
 
 # ベース当てクイズ追加
 # quiz_format => baseのクイズ
-# Color.count.times do |n|
-#     Quiz.create(:color_id => n+1, :quiz_format => 5)
-# end
+Color.count.times do |n|
+    Quiz.create(:color_id => n+1, :quiz_format => 5)
+end
 
 # ベースクイズ選択肢
 # quiz_id:641~672 選択肢(正解は春・イエローベース)
-641.upto(672) {|n|
- Choice.create(:content => 'イエローベース', :is_answer => 0, :quiz_id => n)
- Choice.create(:content => 'ブルーベース', :is_answer => 1, :quiz_id => n)
-}
+# 641.upto(672) {|n|
+#  Choice.create(:content => 'イエローベース', :is_answer => 0, :quiz_id => n)
+#  Choice.create(:content => 'ブルーベース', :is_answer => 1, :quiz_id => n)
+# }
 
 # quiz_id:673~704 選択肢(正解は夏・ブルーベース)
-673.upto(704) {|n|
- Choice.create(:content => 'イエローベース', :is_answer => 1, :quiz_id => n)
- Choice.create(:content => 'ブルーベース', :is_answer => 0, :quiz_id => n)
-}
+# 673.upto(704) {|n|
+#  Choice.create(:content => 'イエローベース', :is_answer => 1, :quiz_id => n)
+#  Choice.create(:content => 'ブルーベース', :is_answer => 0, :quiz_id => n)
+# }
 
 # quiz_id:705~736 選択肢(正解は秋・イエローベース)
-705.upto(736) {|n|
- Choice.create(:content => 'イエローベース', :is_answer => 0, :quiz_id => n)
- Choice.create(:content => 'ブルーベース', :is_answer => 1, :quiz_id => n)
-}
+# 705.upto(736) {|n|
+#  Choice.create(:content => 'イエローベース', :is_answer => 0, :quiz_id => n)
+#  Choice.create(:content => 'ブルーベース', :is_answer => 1, :quiz_id => n)
+# }
 
 # quiz_id:737~768 選択肢(正解は冬・ブルーベース)
-737.upto(768) {|n|
- Choice.create(:content => 'イエローベース', :is_answer => 1, :quiz_id => n)
- Choice.create(:content => 'ブルーベース', :is_answer => 0, :quiz_id => n)
-}
+# 737.upto(768) {|n|
+#  Choice.create(:content => 'イエローベース', :is_answer => 1, :quiz_id => n)
+#  Choice.create(:content => 'ブルーベース', :is_answer => 0, :quiz_id => n)
+# }

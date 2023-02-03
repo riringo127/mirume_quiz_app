@@ -20,6 +20,10 @@ class QuizzesController < ApplicationController
     @quizzes = Quiz.where(quiz_format: 4).sample(10)
   end
 
+  def base
+    @quizzes = Quiz.where(quiz_format: 5).sample(10)
+  end
+
   def mistakes
     @q = current_user.incorrect_answers.ransack(params[:q])
     mistakes = @q.result(distinct: true).where(display: 0).select(:quiz_id).distinct
