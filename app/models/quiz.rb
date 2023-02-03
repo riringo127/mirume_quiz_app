@@ -7,5 +7,5 @@ class Quiz < ApplicationRecord
   has_many :bookmarks, dependent: :destroy
 
   validates :quiz_format, presence: true
-  enum quiz_format: { all_season: 0, spring: 1, summer: 2, autumn: 3, winter: 4 }
+  enum quiz_format: { all_season: 0, spring: 1, summer: 2, autumn: 3, winter: 4, base: 5 }
 end
