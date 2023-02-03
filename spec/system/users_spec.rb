@@ -13,7 +13,7 @@ RSpec.describe "Users", type: :system do
           fill_in 'パスワード', with: 'password'
           fill_in 'パスワード確認', with: 'password'
           expect { click_button '登録' }.to change { User.count }.by(1)
-          expect(page).to have_content 'アカウントを作成しました。'
+          expect(page).to have_content 'アカウントを作成しました'
         end
       end
   
