@@ -35,6 +35,9 @@ Rails.application.routes.draw do
       get :is_winter
     end
     collection do
+      get :base
+    end
+    collection do
       get :mistakes
     end
     collection do

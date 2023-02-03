@@ -24,12 +24,13 @@
   <div class="row align-items-center justify-content-center">
     <div class="col-lg-8 col-md-8 mb-3 mt-1">
       <%= search_form_for @q, url: mistakes_quizzes_path, class: 'd-flex align-items-center' do |f| %>
-        <%= f.select :quiz_quiz_format_eq, [['4シーズン選択', 0], ['スプリング選択', 1], ['サマー選択', 2], ['オータム選択', 3], ['ウィンター選択', 4]], {include_blank: '出題カテゴリ(選択なし)'}, class: 'form-select select_box me-2' %>
+        <%= f.select :quiz_quiz_format_eq, [['4シーズン選択', 0], ['スプリング選択', 1], ['サマー選択', 2], ['オータム選択', 3], ['ウィンター選択', 4], ['ベース選択', 5]], {include_blank: '出題カテゴリ(選択なし)'}, class: 'form-select select_box me-2' %>
         <%= f.submit '絞り込む', class: "btn search_btn ms-1 px-4" %>
       <% end %>
     </div>
   </div>
 </div>
+
 
 <% if @quizzes.present? %>
   <div class="mt-5">

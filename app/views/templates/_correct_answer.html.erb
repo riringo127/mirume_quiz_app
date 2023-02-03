@@ -10,6 +10,17 @@
         この色は<span><%= quiz.color.season_type_i18n %>タイプ</span>です
       </div>
     </div>
+    <% if quiz.quiz_format == "base" %>
+      <div class="row answer_color_name mb-2">
+        <div class="col d-flex justify-content-center align-items-center">
+          <% if quiz.color.season_type == "spring" || quiz.color.season_type == "autumn" %>
+            ベース：イエローベース
+          <% else %>
+            ベース：ブルーベース
+          <% end %>
+        </div>
+      </div>
+    <% end %>
     <div class="row answer_color_name mb-2">
       <div class="col d-flex justify-content-center align-items-center">
         色名：<%= quiz.color.name %>
