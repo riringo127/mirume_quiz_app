@@ -18,6 +18,12 @@ Rails.application.routes.draw do
     collection do
       get :favorites
     end
+    collection do
+      get :all_ranks
+    end
+    collection do
+      get :my_ranks
+    end
   end
   resources :quizzes, only: %i[index] do
     resources :incorrect_answers, only: %i[create update]

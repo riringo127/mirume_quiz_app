@@ -37,6 +37,11 @@ ja:
     favorites:
       title: '色一覧'
       no_result: 'お気に入りの色はありません'
+    all_ranks:
+      title: '間違えやすい色'
+    my_ranks:
+      title: '間違えやすい色'
+      no_result: '間違えた色はありません'
   quizzes:
     index:
       title: '色識別クイズ'
