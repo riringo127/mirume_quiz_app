@@ -39,8 +39,11 @@ https://www.mirume-personalcolor.com/
 * 4択クイズ（上級者向け）：ランダムに出題される色のパーソナルカラータイプを4択（春・夏・秋・冬）から選択肢し、解答することができます。
 [![Image from Gyazo](https://i.gyazo.com/343d80c8787b94a807ef1a0a4bb7b8ad.gif)](https://gyazo.com/343d80c8787b94a807ef1a0a4bb7b8ad)
 
-* 2択クイズ（初心者向け）：ランダムに出題される色が、該当のタイプか否かの2択で解答することができます。
+* 2択クイズ①（初心者向け）：ランダムに出題される色が、該当のタイプか否かの2択で解答することができます。
 [![Image from Gyazo](https://i.gyazo.com/1664d38283c4a508bdf19210c3d5cf22.gif)](https://gyazo.com/1664d38283c4a508bdf19210c3d5cf22)
+
+* 2択クイズ②（初心者向け）：ランダムに出題される色が、イエローベースかブルーベースかの2択で解答することができます。
+[![Image from Gyazo](https://i.gyazo.com/92ed4ab22678da51e75c7927679b62e8.gif)](https://gyazo.com/92ed4ab22678da51e75c7927679b62e8)
 
 * 色のカテゴリー（赤、青、黄など）で絞り込んだ出題が可能です。
 * 出題された色の正解率が表示され、問題の難易度を知ることができます。
@@ -63,6 +66,10 @@ https://www.mirume-personalcolor.com/
 * 任意の色を「お気に入り」登録することができ、お気に入り登録した色で絞り込みができます。
 * 色の系統カテゴリー（ピンク・赤・紫・青など）で絞り込むことができます。
 [![Image from Gyazo](https://i.gyazo.com/1ab8fb98b77c650f275b9e518ee93ec6.png)](https://gyazo.com/1ab8fb98b77c650f275b9e518ee93ec6)
+
+### 間違えやすい色のランキング機能（要ログイン）
+* 間違えやすい色をランキング形式で見ることができます。
+[![Image from Gyazo](https://i.gyazo.com/a99305be90deb0f1c1a92ce2cec87f3a.png)](https://gyazo.com/a99305be90deb0f1c1a92ce2cec87f3a)
 
 ### 総クリア数（要ログイン）
 * 全128色中、何色クリアしたかを確認することができます。
@@ -91,8 +98,8 @@ https://www.mirume-personalcolor.com/
 [![Image from Gyazo](https://i.gyazo.com/1200945fe46ec4d4a1e75149c097da41.png)](https://gyazo.com/1200945fe46ec4d4a1e75149c097da41)
 
 ### リリース1ヶ月でのPV/UU数
-* PV数：4,108
-* UU数：430
+* PV数：4,837
+* UU数：497
 
 ## 使用技術
 | バックエンド | フロントエンド | インフラ・その他 |
